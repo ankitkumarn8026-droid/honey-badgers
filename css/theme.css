@@ -74,6 +74,13 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(243,156,18,0.03) 20px,
+    rgba(243,156,18,0.03) 40px
+  );
 }
 
 .logo {
