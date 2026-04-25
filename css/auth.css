@@ -1,0 +1,44 @@
+body { margin: 0;
+       font-family: arial, sans-serif;
+       background: linear-gradient(135deg, #667eea, #764ba2); 
+       display: flex; 
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       }
+
+.container { background: rgba(255,255,255,0.1);
+
+             backdrop-filter: blur(10px);
+             padding: 40px;
+             border-radius: 15px;
+             width: 300px;
+             color: white;
+             text-align: center;
+}       
+
+
+ input { width: 100%;
+         padding: 10px;
+         margin: 10px 0;
+         border: none;
+         border-radius: 8px;
+       }
+  button { width: 100%;
+           padding: 10px;
+           border: none;
+           border-radius: 8px;
+           background: #ff6b6b;
+           color: white;
+           cursor: pointer;
+           }
+          button:hover { background: #ff4757;
+                       }
+                       
+          .error { color: yellow;
+                    font-size: 12px;
+                 } 
+           #successMsg { color: lightgreen;
+              margin-top: 10px;
+       }
+                                        
