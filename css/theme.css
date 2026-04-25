@@ -52,25 +52,15 @@ body {
 
 /* Header Navigation */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 20px,
-      rgba(243,156,18,0.03) 20px,
-      rgba(243,156,18,0.03) 40px
-    ),
-    rgba(10, 10, 10, 0.95);
-
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 20px 0;
-  transition: all 0.3s ease;
+position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(10, 10, 10, 0.95);
+	backdrop-filter: blur(10px);
+	z-index: 1000;
+	padding: 20px 0;
+	transition: all 0.3s ease;
 }
 header.scrolled {
 	padding: 15px 0;
