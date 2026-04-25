@@ -952,6 +952,7 @@ nav {
 	color: var(--text-light);
 	font-size: 16px;
 	text-decoration: none;
+	text-overflow: ellipsis;
 	transition: color 0.3s ease;
 }
 
