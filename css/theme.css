@@ -82,6 +82,7 @@ nav {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  margin-right: auto;
 }
 
 .logo img {
