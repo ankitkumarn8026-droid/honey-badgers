@@ -334,4 +334,4 @@ if (subtitle) {
    setTimeout(() => {
       subtitle.classList.add("finished");
    }, 4500);
-}});
+});
