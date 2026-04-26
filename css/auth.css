@@ -24,6 +24,7 @@ body {  margin: 0;
 .auth-form {
   transform: translateY(-10px);
   position: relative; /* 🔥 important */
+  z-index: 1;
   width: 350px;
   padding: 40px;
 
@@ -50,11 +51,12 @@ body {  margin: 0;
 
 .auth-form::before {
   content: "";
+  z-index: 1;
   position: absolute;
   inset: 0;
   border-radius: 15px;
   padding: 1px;
-
+  pointer-events: none;
   background: linear-gradient(120deg, #ff8c00, transparent);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
