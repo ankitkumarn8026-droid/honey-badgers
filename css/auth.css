@@ -1,20 +1,20 @@
-body { margin: 0;
-       font-family: 'Orbitron', sans-serif;
-       background: linear-gradient(135deg, #667eea, #764ba2); 
-       display: flex; 
-       justify-content: center;
-       align-items: center;
-       height: 100vh;
-        background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),  background-size: cover;
-  background-position: center;
+body {  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
     url("../images/gaming_hero_4k.png");
+
+  background-size: cover;
+  background-position: center;
 }
 
-.container { background: rgba(255,255,255,0.1);
-             height: 100vh;
-             display: flex;
-             backdrop-filter: blur(10px);
+.container { display: flex;
              padding: 40px;
              border-radius: 15px;
              width: 300px;
@@ -70,13 +70,6 @@ body { margin: 0;
   text-shadow: 0 0 8px #ff8c00;
 }
 
- input { width: 100%;
-         padding: 10px;
-         margin: 10px 0;
-         border: none;
-         border-radius: 8px;
-       }
-
 .input-group input {
   width: 100%;
   padding: 12px;
@@ -104,7 +97,6 @@ body { margin: 0;
            background: linear-gradient(45deg, #ff8c00, #ff4500);
            border: none;
            border-radius: 8px;
-           background: #ff6b6b;
            color: #000;
            cursor: pointer;
            transition: 0.3s;
