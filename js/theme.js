@@ -319,6 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
    };
 
    
+   window.addEventListener('scroll', revealOnScroll);
+   revealOnScroll(); // Check on load
 const title = document.querySelector(".typing-title");
 const subtitle = document.querySelector(".typing-subtitle");
 
@@ -332,8 +334,4 @@ if (subtitle) {
    setTimeout(() => {
       subtitle.classList.add("finished");
    }, 4500);
-}
-   
-   window.addEventListener('scroll', revealOnScroll);
-   revealOnScroll(); // Check on load
-});
+}});
