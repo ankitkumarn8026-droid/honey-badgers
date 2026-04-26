@@ -316,6 +316,13 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   to { width: 100%; }
 }
 
+.typing-title,
+.typing-subtitle {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .typing-title.finished,
 .typing-subtitle.finished {
   border-right: none;
