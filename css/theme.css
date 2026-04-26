@@ -296,6 +296,20 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   transition: 0.3s ease;
 }
 
+.typing-title {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #ff8c00;
+
+  width: 0;
+  animation: typingTitle 2.5s steps(25, end) forwards,
+             blink 0.7s infinite;
+}
+
+@keyframes typingTitle {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
 .hero-title:hover {
   text-shadow: 
@@ -310,6 +324,37 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 	margin-bottom: 40px;
 	font-weight: 300;
 	letter-spacing: 2px;
+}
+.typing-subtitle {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #aaa;
+
+  width: 0;
+  opacity: 0;
+
+  animation: 
+    showSub 0.1s forwards 2.5s,
+    typingSub 2s steps(30, end) 2.6s forwards,
+    blink 0.7s infinite 2.6s;
+}
+
+@keyframes showSub {
+  to { opacity: 1; }
+}
+
+@keyframes typingSub {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-title,
+.typing-subtitle {
+  border-right: 3px solid #ff8c00;
 }
 
 .cta-button {
@@ -327,7 +372,20 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 	position: relative;
 	overflow: hidden;
 }
+.fade-btn {
+  opacity: 0;
+  transform: translateY(20px);
 
+  animation: showBtn 0.8s ease forwards;
+  animation-delay: 5s; /* title + subtitle ke baad */
+}
+
+@keyframes showBtn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .cta-button:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 10px 30px rgba(243, 156, 18, 0.3);
