@@ -327,13 +327,13 @@ const subtitle = document.querySelector(".typing-subtitle");
 if (title) {
    setTimeout(() => {
       title.classList.add("finished");
-   }, 2600);
+   }, 3000);
 }
 
 if (subtitle) {
    setTimeout(() => {
       subtitle.classList.add("finished");
-   }, 4700);
+   }, 5200);
 }
    
 });
