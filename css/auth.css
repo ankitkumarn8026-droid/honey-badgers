@@ -20,7 +20,7 @@ body {  margin: 0;
             align-items: center;      /* 🔥 ye bhi */
 }       
 
-#loginForm {
+.auth-form {
   position: relative; /* 🔥 important */
   width: 350px;
   padding: 40px;
