@@ -1,7 +1,5 @@
 body {  margin: 0;
   font-family: 'Orbitron', sans-serif;
-
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -20,6 +18,8 @@ body {  margin: 0;
              width: 100%;
              color: white;
              text-align: center;
+            justify-content: center;  /* 🔥 ye main fix hai */
+            align-items: center;      /* 🔥 ye bhi */
 }       
 
 #loginForm {
