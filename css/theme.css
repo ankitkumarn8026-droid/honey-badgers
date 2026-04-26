@@ -282,13 +282,25 @@ nav {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
   letter-spacing: -2px;
   margin-bottom: 20px;
+	animation: glowPulse 3s infinite ease-in-out alternate;
 
-  color: #fff; /* 👈 IMPORTANT */
+  color: #ff8c00;
+text-shadow: 0 0 10px #ff8c00, 0 0 30px #ff4500;
   transition: 0.3s ease;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 80, 0, 0.8);
+  }
 }
 
 .hero-title:hover {
