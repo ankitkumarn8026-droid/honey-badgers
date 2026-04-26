@@ -268,7 +268,7 @@ nav {
 
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
-    url('images/gaming_hero_4k.png');
+    url("images/gaming_hero_4k.png");
 
   background-size: cover;
   background-position: center;
