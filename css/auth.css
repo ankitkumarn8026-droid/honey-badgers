@@ -1,14 +1,19 @@
 body { margin: 0;
-       font-family: arial, sans-serif;
+       font-family: 'Orbitron', sans-serif;
        background: linear-gradient(135deg, #667eea, #764ba2); 
        display: flex; 
        justify-content: center;
        align-items: center;
        height: 100vh;
-       }
+        background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),  background-size: cover;
+  background-position: center;
+    url("../images/gaming_hero_4k.png");
+}
 
 .container { background: rgba(255,255,255,0.1);
-
+             height: 100vh;
+             display: flex;
              backdrop-filter: blur(10px);
              padding: 40px;
              border-radius: 15px;
@@ -17,6 +22,53 @@ body { margin: 0;
              text-align: center;
 }       
 
+#loginForm {
+  position: relative; /* 🔥 important */
+  width: 350px;
+  padding: 40px;
+
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(15px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(255, 140, 0, 0.2);
+
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.2);
+  text-align: center;
+}
+
+#loginForm h2 {
+  color: #ff8c00;
+  margin-bottom: 25px;
+
+  text-shadow: 0 0 10px rgba(255,140,0,0.6);
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  font-size: 24px;
+  color: #ff8c00;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(255,140,0,0.7);
+  transition: 0.3s;     
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+  transform: rotate(90deg) scale(1.2);
+}
+
+#loginForm a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#loginForm a:hover {
+  text-shadow: 0 0 8px #ff8c00;
+}
 
  input { width: 100%;
          padding: 10px;
@@ -24,15 +76,44 @@ body { margin: 0;
          border: none;
          border-radius: 8px;
        }
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  background: #111;
+  border: 1px solid rgba(255,140,0,0.3);
+  border-radius: 8px;
+
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+.input-group input:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 10px rgba(255,140,0,0.7);
+}
   button { width: 100%;
-           padding: 10px;
+           padding: 12px;
+           background: linear-gradient(45deg, #ff8c00, #ff4500);
            border: none;
            border-radius: 8px;
            background: #ff6b6b;
-           color: white;
+           color: #000;
            cursor: pointer;
+           transition: 0.3s;
            }
-          button:hover { background: #ff4757;
+          
+button:hover {
+              background: #ff4757;
+              transform: translateY(-2px);
+              box-shadow: 0 0 15px rgba(255,140,0,0.7);
                        }
                        
           .error { color: yellow;
