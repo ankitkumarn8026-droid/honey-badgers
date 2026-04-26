@@ -382,7 +382,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   transform: translateY(20px);
 
   animation: showBtn 0.8s ease forwards;
-  animation-delay: 5s; /* title + subtitle ke baad */
+  animation-delay: 5.2s; /* title + subtitle ke baad */
 }
 
 @keyframes showBtn {
