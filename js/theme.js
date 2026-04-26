@@ -321,17 +321,4 @@ document.addEventListener('DOMContentLoaded', () => {
    
    window.addEventListener('scroll', revealOnScroll);
    revealOnScroll(); // Check on load
-const title = document.querySelector(".typing-title");
-const subtitle = document.querySelector(".typing-subtitle");
-
-if (title) {
-   setTimeout(() => {
-      title.classList.add("finished");
-   }, 2500);
-}
-
-if (subtitle) {
-   setTimeout(() => {
-      subtitle.classList.add("finished");
-   }, 4500);
 });
