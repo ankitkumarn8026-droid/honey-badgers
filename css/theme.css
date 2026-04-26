@@ -311,13 +311,6 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   to { width: 100%; }
 }
 
-.hero-title:hover {
-  text-shadow: 
-    0 0 10px #ff9800,
-    0 0 20px #ff9800,
-    0 0 40px #ff9800;
-}
-
 .hero-subtitle {
 	font-size: clamp(1rem, 2vw, 1.3rem);
 	color: var(--text-gray);
