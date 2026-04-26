@@ -11,16 +11,18 @@ body {  margin: 0;
 }
 
 .container { display: flex;
-             padding: 40px;
+             padding: 0px;
              border-radius: 15px;
              width: 100%;
              color: white;
              text-align: center;
             justify-content: center;  /* 🔥 ye main fix hai */
             align-items: center;      /* 🔥 ye bhi */
+            min-height: 100vh;
 }       
 
 .auth-form {
+  transform: translateY(-10px);
   position: relative; /* 🔥 important */
   width: 350px;
   padding: 40px;
