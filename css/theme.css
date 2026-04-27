@@ -286,7 +286,7 @@ nav {
   background-size: cover;
   background-position: center;
 
-  opacity: 1x;
+  opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
