@@ -368,7 +368,7 @@ if (slides.length > 0) {
 function resetAutoSlide() {
   if (autoSlide) clearInterval(autoSlide);
   autoSlide = setInterval(nextSlide, 4000);
-}document.addEventListener("visibilitychange", () => { if (document.hidden) { clearInterval(autoSlide); } else { resetAutoSlide(); } });
+}
 
    document.addEventListener("visibilitychange", () => { if (document.hidden) { clearInterval(autoSlide); } else { resetAutoSlide(); } });
 // 🔥 SWIPE LOGIC (ALAG rakho, function ke bahar)
