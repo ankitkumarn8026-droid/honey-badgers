@@ -382,7 +382,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 .hero-subtitle {
 	font-size: clamp(1rem, 2vw, 1.3rem);
-	color: var(--text-gray);
+	color: #e0e0e0;
 	margin-bottom: 40px;
 	font-weight: 300;
 	letter-spacing: 2px;
