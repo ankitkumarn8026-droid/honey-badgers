@@ -368,4 +368,3 @@ function handleSwipe(endX) {
   if (startX - endX > 50) nextSlide();
   if (endX - startX > 50) prevSlide();
 }
-});
