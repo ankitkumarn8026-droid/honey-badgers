@@ -266,13 +266,13 @@ nav {
   justify-content: center;
   position: relative;
   overflow: hidden;	
-  background-size: cover;
-  background-position: center;
-}
+ }
+
 .hero-slider {
   position: absolute;
   overflow: hidden;
   inset: 0;
+  z-index: 0;
 }
 
 .slide {
@@ -282,17 +282,17 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   background-size: cover;
   background-position: center;
 
-  opacity: 0;
+  opacity: 1x;
   transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
-  z-index: 1;	
+  z-index: 2;	
 }
 
 .hero-slider .prev,
@@ -317,8 +317,10 @@ nav {
 .hero-slider .next {
   right: 10px;
 }
+
 .slide:first-child {
   opacity: 1;
+  z-index: 1;
 }
 
 .hero-content {
