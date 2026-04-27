@@ -234,7 +234,7 @@ class PhotoCoverflow {
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
    // Initialize Coverflow
-   new PhotoCoverflow();
+   const coverflow = new PhotoCoverflow();
 
    // Hide loading screen
    setTimeout(() => {
@@ -337,34 +337,61 @@ if (subtitle) {
 }
    // tumhara existing code ...
 
-// 👇 sabse last me add karo
-let startX = 0;
-let isDragging = false;
+let slides = document.querySelectorAll(".slide");
+  let index = 0;
 
-const slider = document.querySelector(".hero-slider");
+  function showSlide(i) {
+    slides.forEach(s => s.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
 
-slider.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  // auto slider
+  setInterval(nextSlide, 4000);
+
+
+  // 🔥 SWIPE LOGIC
+  let startX = 0;
+  let isDragging = false;
+
+  const slider = document.querySelector(".hero-slider");
+
+  if (slider) {
+
+    slider.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchend", e => {
+      let endX = e.changedTouches[0].clientX;
+      handleSwipe(endX);
+    });
+
+    slider.addEventListener("mousedown", e => {
+      isDragging = true;
+      startX = e.clientX;
+    });
+
+    slider.addEventListener("mouseup", e => {
+      if (!isDragging) return;
+      isDragging = false;
+      let endX = e.clientX;
+      handleSwipe(endX);
+    });
+
+    function handleSwipe(endX) {
+      if (startX - endX > 50) nextSlide();
+      if (endX - startX > 50) prevSlide();
+    }
+  }
+
 });
-
-slider.addEventListener("touchend", e => {
-  let endX = e.changedTouches[0].clientX;
-  handleSwipe(endX);
-});
-
-slider.addEventListener("mousedown", e => {
-  isDragging = true;
-  startX = e.clientX;
-});
-
-slider.addEventListener("mouseup", e => {
-  if (!isDragging) return;
-  isDragging = false;
-  let endX = e.clientX;
-  handleSwipe(endX);
-});
-
-function handleSwipe(endX) {
-  if (startX - endX > 50) nextSlide();
-  if (endX - startX > 50) prevSlide();
-}
