@@ -291,6 +291,30 @@ nav {
 .slide.active {
   opacity: 1;
 }
+
+.hero-slider .prev,
+.hero-slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.hero-slider .prev {
+  left: 10px;
+}
+
+.hero-slider .next {
+  right: 10px;
+}
+
 .hero-content {
 	text-align: center;
 	z-index: 1;
