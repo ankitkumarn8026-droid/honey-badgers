@@ -347,11 +347,13 @@ function showSlide(i) {
 }
 
 function nextSlide() {
+  if (slides.length === 0) return;
   index = (index + 1) % slides.length;
   showSlide(index);
 }
-
+   
 function prevSlide() {
+  if (slides.length === 0) return;
   index = (index - 1 + slides.length) % slides.length;
   showSlide(index);
 }
@@ -375,7 +377,7 @@ let isDragging = false;
 
 const slider = document.querySelector(".hero-slider");
 
-if (slider) {
+if (slider && slides.length > 0) {
 
   slider.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
@@ -409,3 +411,4 @@ if (slider) {
     }
   }
 }
+});
