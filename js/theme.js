@@ -368,8 +368,9 @@ if (slides.length > 0) {
 function resetAutoSlide() {
   if (autoSlide) clearInterval(autoSlide);
   autoSlide = setInterval(nextSlide, 4000);
-}
+}document.addEventListener("visibilitychange", () => { if (document.hidden) { clearInterval(autoSlide); } else { resetAutoSlide(); } });
 
+   document.addEventListener("visibilitychange", () => { if (document.hidden) { clearInterval(autoSlide); } else { resetAutoSlide(); } });
 // 🔥 SWIPE LOGIC (ALAG rakho, function ke bahar)
 let startX = 0;
 let isDragging = false;
@@ -380,7 +381,7 @@ if (slider && slides.length > 0) {
 
   slider.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
-  });
+  }, { passive: true });
 
   slider.addEventListener("touchend", e => {
     let endX = e.changedTouches[0].clientX;
