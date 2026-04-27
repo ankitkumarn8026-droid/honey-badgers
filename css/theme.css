@@ -265,15 +265,15 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-
-
+  overflow: hidden;	
   background-size: cover;
   background-position: center;
 }
 .hero-slider {
-  position: relative;
-  height: 100vh;
-  overflow: hidden; }
+  position: absolute;
+  overflow: hidden;
+  inset: 0;
+}
 
 .slide {
   position: absolute;
@@ -281,7 +281,7 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-
+  z-index: 1;
   background-size: cover;
   background-position: center;
 
@@ -317,7 +317,7 @@ nav {
 
 .hero-content {
 	text-align: center;
-	z-index: 1;
+	z-index: 5;
 	padding: 0 20px;
 }
 
