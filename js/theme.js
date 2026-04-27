@@ -335,5 +335,37 @@ if (subtitle) {
       subtitle.classList.add("finished");
    }, 5200);
 }
-   
+   // tumhara existing code ...
+
+// 👇 sabse last me add karo
+let startX = 0;
+let isDragging = false;
+
+const slider = document.querySelector(".hero-slider");
+
+slider.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+  handleSwipe(endX);
+});
+
+slider.addEventListener("mousedown", e => {
+  isDragging = true;
+  startX = e.clientX;
+});
+
+slider.addEventListener("mouseup", e => {
+  if (!isDragging) return;
+  isDragging = false;
+  let endX = e.clientX;
+  handleSwipe(endX);
+});
+
+function handleSwipe(endX) {
+  if (startX - endX > 50) nextSlide();
+  if (endX - startX > 50) prevSlide();
+}
 });
