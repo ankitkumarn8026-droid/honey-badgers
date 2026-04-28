@@ -848,6 +848,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .footer {
     background: linear-gradient(to top, #000000, #0d0d0d);
     border-top: 1px solid rgba(243, 156, 18, 0.2);
+	padding: 80px 30px 30px;
 }
 
 .footer-container {
@@ -856,6 +857,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
     gap: 40px;
     max-width: 1200px;
     margin: auto;
+	padding: 0 20px; 
 }
 
 .footer-col h3,
@@ -903,6 +905,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
     border-top: 1px solid #222;
     padding-top: 20px;
     color: #777;
+	padding-top: 20px;
 }
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
