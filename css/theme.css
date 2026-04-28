@@ -845,11 +845,9 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 	font-weight: 600;
 }
 
-
 .footer {
-    background: #050505;
-    padding: 60px 20px 20px;
-    color: #fff;
+    background: linear-gradient(to top, #000000, #0d0d0d);
+    border-top: 1px solid rgba(243, 156, 18, 0.2);
 }
 
 .footer-container {
