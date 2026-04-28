@@ -907,10 +907,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
     background: #f39c12;
     color: #000;
 }
-i, svg {
-    width: auto;
-    height: auto;
-}
+
 
 /* BOTTOM */
 .footer-bottom {
