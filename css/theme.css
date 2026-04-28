@@ -441,7 +441,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .portfolio-section {
 	padding: 100px 0;
 	position: relative;
-	background: background: #0a0a0a;
+	background: #0a0a0a;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -884,9 +884,11 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 /* RIGHT (SOCIAL) */
 .footer-right {
+	font-size: 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+	
 }
 
 .footer-right a {
@@ -904,6 +906,10 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .footer-right a:hover {
     background: #f39c12;
     color: #000;
+}
+i, svg {
+    width: auto;
+    height: auto;
 }
 
 /* BOTTOM */
