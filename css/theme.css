@@ -103,7 +103,7 @@ nav {
 .search-box {
   position: relative;
   flex: 1;
-  max-width: 320px;
+  max-width: 360px;
   min-width: 200px;
 }
 
@@ -331,6 +331,7 @@ nav {
   font-size: 24px;
   padding: 10px 15px;
   cursor: pointer;
+	display: none;
 }
 
 .hero-slider .prev {
@@ -441,7 +442,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 	font-size: 14px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	border-radius: 2px;
+	border-radius: 30px;
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
@@ -463,8 +464,8 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   }
 }
 .cta-button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 10px 30px rgba(243, 156, 18, 0.3);
+	transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.6);
 }
 
 /* Portfolio Section with Coverflow */
