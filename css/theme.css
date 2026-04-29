@@ -68,25 +68,25 @@ header.scrolled {
 nav {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 0 25px;
+	padding: 0 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: #0a0a0a;
 	border-bottom: 1px solid rgba(243, 156, 18, 0.3);
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+	gap:15px;
 }
 
 .nav-left {
     flex: 0 0 auto;
-	margin-left: 0px;
+	
 }
 
 .nav-center {
     flex: 1;
     display: flex;
     justify-content: center;
-	margin-left: 20px;
 }
 
 
