@@ -77,7 +77,19 @@ nav {
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
+.nav-left {
+    flex: 0 0 auto;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
 .nav-right {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -85,10 +97,13 @@ nav {
   justify-content: flex-end;
 }
 
+
+
 .search-box {
   position: relative;
   flex: 1;
-  max-width: 400px;
+  width: 450px;
+  max-width: 100%;
 }
 
 .search-box input {
@@ -198,11 +213,12 @@ nav {
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	padding: 6px 14px;
+	padding: 6px 12px;
 	position: relative;
 	transition: all 0.3s ease;
 	border-radius: 6px;
 	background: transparent;
+	gap: 2px;
 	border: 1px solid transparent;
 }
 
