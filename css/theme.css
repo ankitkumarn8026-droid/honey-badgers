@@ -849,15 +849,15 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
     background: linear-gradient(180deg, #0a0a0a, #111827);
     border-top: 1px solid rgba(243, 156, 18, 0.3);
 	box-shadow: 0 -10px 30px rgba(0,0,0,0.6);
-	padding: 60px 30px 20px;	
+	padding: 40px 30px 20px;	
 	margin-top: auto;
 
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
     max-width: 1600px;
     margin: 0 auto;
 	padding: 0 60px;
