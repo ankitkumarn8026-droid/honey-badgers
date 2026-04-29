@@ -79,7 +79,7 @@ nav {
 
 .nav-left {
     flex: 0 0 auto;
-	margin-left: 10px;
+	margin-left: 0px;
 }
 
 .nav-center {
@@ -103,7 +103,7 @@ nav {
 .search-box {
   position: relative;
   flex: 1;
-  width: 450px;
+  width: 400px;
   max-width: 100%;
 }
 
@@ -170,7 +170,7 @@ nav {
   gap: 10px;
   text-decoration: none;
   margin-right: 0;
-  padding-left: 10px;	
+  padding-left: 0px;	
 }
 
 .logo img {
