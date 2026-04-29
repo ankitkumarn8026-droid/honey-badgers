@@ -2,17 +2,13 @@
 
 JavaScript Document
 
-TemplateMo 615 Amber Folio
-
-https://templatemo.com/tm-615-amber-folio
-
 */
 
 // Coverflow Class
 class PhotoCoverflow {
    constructor() {
       this.items = document.querySelectorAll('.coverflow-item');
-      this.indicators = document.querySelectorAll('.indicator');
+      this.indicators = document.querySelectorAll('#coverflowContainer .indicator');
       this.currentIndex = 4; // Start with middle item
       this.totalItems = this.items.length;
       this.isPlaying = false;
@@ -339,17 +335,33 @@ if (subtitle) {
 
 const slides = document.querySelectorAll(".slide");
 let index = 0;
+const dots = document.querySelectorAll(".indicator");
+   
 
 function showSlide(i) {
   if (!slides[i]) return;
+
   slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
   slides[i].classList.add("active");
+ if (dots[i]) dots[i].classList.add("active");
 }
 
 function nextSlide() {
   if (slides.length === 0) return;
   index = (index + 1) % slides.length;
   showSlide(index);
+}
+
+   if (dots.length > 0) {
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      index = i;
+      showSlide(index);
+      resetAutoSlide();
+    });
+  });
 }
    
 function prevSlide() {
@@ -411,4 +423,6 @@ if (slider && slides.length > 0) {
     }
   }
 }
+if (slides.length > 0) {
+  showSlide(index);
 });
