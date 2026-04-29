@@ -53,12 +53,13 @@ position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	background: rgba(10, 10, 10, 0.85);
-	backdrop-filter: blur(12px);
+	background: #0a0a0a;
+	backdrop-filter: none; 
 	z-index: 1000;
-	padding: 20px 0;
+	padding: 0;
 	transition: all 0.3s ease;
 }
+
 header.scrolled {
 	padding: 15px 0;
 	background: rgba(10, 10, 10, 0.98);
@@ -72,8 +73,8 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	background: #0a0a0a;
-	border-bottom: 2px solid #f39c12;
-	box-shadow: 0 0 20px rgba(243, 156, 18, 0.2);
+	border-bottom: 1px solid rgba(243, 156, 18, 0.3);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 .nav-right {
