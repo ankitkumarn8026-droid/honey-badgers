@@ -103,7 +103,7 @@ nav {
 .search-box {
   position: relative;
   flex: 1;
-  max-width: 360px;
+  max-width: 500px;
   min-width: 200px;
 }
 
