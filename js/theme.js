@@ -448,4 +448,4 @@ if (slider && slides.length > 0) {
 }
 if (slides.length > 0) {
   showSlide(index);
-});
+} });
