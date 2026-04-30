@@ -25,9 +25,13 @@ class PhotoCoverflow {
 
    bindEvents() {
       // Navigation buttons
-      document.getElementById('prevBtn').addEventListener('click', () => this.prev());
-      document.getElementById('nextBtn').addEventListener('click', () => this.next());
-      document.getElementById('playPauseBtn').addEventListener('click', () => this.toggleAutoPlay());
+     const prevBtn = document.getElementById('prevBtn');
+     const nextBtn = document.getElementById('nextBtn');
+     const playPauseBtn = document.getElementById('playPauseBtn');
+
+     if (prevBtn) prevBtn.addEventListener('click', () => this.prev());
+     if (nextBtn) nextBtn.addEventListener('click', () => this.next());
+     if (playPauseBtn) playPauseBtn.addEventListener('click', () => this.toggleAutoPlay());
 
       // Indicator clicks
       this.indicators.forEach((indicator, index) => {
@@ -60,36 +64,35 @@ class PhotoCoverflow {
       let startX = 0;
       let startY = 0;
 
-      const container = document.getElementById('coverflowContainer');
+const container = document.getElementById('coverflowContainer');
 
-      container.addEventListener('touchstart', (e) => {
-         startX = e.touches[0].clientX;
-         startY = e.touches[0].clientY;
-      }, {
-         passive: true
-      });
+if (container) {
+  container.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
 
-      container.addEventListener('touchend', (e) => {
-         if (!startX || !startY) return;
+  container.addEventListener('touchend', (e) => {
+    if (!startX || !startY) return;
 
-         const endX = e.changedTouches[0].clientX;
-         const endY = e.changedTouches[0].clientY;
-         const diffX = startX - endX;
-         const diffY = startY - endY;
+    const endX = e.changedTouches[0].clientX;
+    const endY = e.changedTouches[0].clientY;
 
-         if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-            if (diffX > 0) {
-               this.next();
-            } else {
-               this.prev();
-            }
-         }
+    const diffX = startX - endX;
+    const diffY = startY - endY;
 
-         startX = 0;
-         startY = 0;
-      }, {
-         passive: true
-      });
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        this.next();
+      } else {
+        this.prev();
+      }
+    }
+
+    startX = 0;
+    startY = 0;
+  }, { passive: true });
+}
 
       // Handle window resize (both width and height)
       let resizeTimer;
@@ -230,12 +233,17 @@ class PhotoCoverflow {
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
    // Initialize Coverflow
-   const coverflow = new PhotoCoverflow();
-
+   if (document.querySelector('.coverflow-item')) {
+  new PhotoCoverflow();
+}
    // Hide loading screen
-   setTimeout(() => {
-      document.getElementById('loadingScreen').classList.add('hidden');
-   }, 1000);
+  const loader = document.getElementById('loadingScreen');
+
+if (loader) {
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 1000);
+}
 
    // Header scroll effect
    const header = document.getElementById('header');
@@ -248,13 +256,15 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
    // Mobile menu toggle
-   const menuToggle = document.getElementById('menuToggle');
-   const navMenu = document.getElementById('navMenu');
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
 
-   menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navMenu.classList.toggle('active');
-   });
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+}
 
    // Close mobile menu when clicking a link
    document.querySelectorAll('.nav-menu a').forEach(link => {
@@ -335,7 +345,7 @@ if (subtitle) {
 
 const slides = document.querySelectorAll(".slide");
 let index = 0;
-const dots = document.querySelectorAll(".indicator");
+const dots = document.querySelectorAll(".hero-slider .indicator");
    
 
 function showSlide(i) {
