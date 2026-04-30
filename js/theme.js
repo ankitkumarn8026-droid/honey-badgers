@@ -247,13 +247,15 @@ if (loader) {
 
    // Header scroll effect
    const header = document.getElementById('header');
-   window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-         header.classList.add('scrolled');
-      } else {
-         header.classList.remove('scrolled');
-      }
-   });
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+}
 
    // Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
@@ -267,12 +269,14 @@ if (menuToggle && navMenu) {
 }
 
    // Close mobile menu when clicking a link
-   document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-         menuToggle.classList.remove('active');
-         navMenu.classList.remove('active');
-      });
-   });
+   if (menuToggle && navMenu) {
+  document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+   }  
 
    // Smooth scrolling for anchor links
    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -392,7 +396,16 @@ function resetAutoSlide() {
   autoSlide = setInterval(nextSlide, 4000);
 }
 
-   document.addEventListener("visibilitychange", () => { if (document.hidden) { clearInterval(autoSlide); } else { resetAutoSlide(); } });
+   document.addEventListener("visibilitychange", () => {
+  if (!autoSlide) return;
+
+  if (document.hidden) {
+    clearInterval(autoSlide);
+  } else {
+    resetAutoSlide();
+  }
+});
+   
 // 🔥 SWIPE LOGIC (ALAG rakho, function ke bahar)
 let startX = 0;
 let isDragging = false;
