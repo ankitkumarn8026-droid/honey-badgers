@@ -309,7 +309,7 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   pointer-events: none; /* 🔥 important */
 }
 
@@ -1074,7 +1074,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 /* Smooth Reveal Animations */
 .reveal {
-	opacity: 1;
+	opacity: 0;
 	transform: translateY(30px);
 	transition: all 0.8s ease;
 }
