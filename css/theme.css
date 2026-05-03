@@ -1136,4 +1136,8 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 #game-detail button:hover {
   background: #ffb84d;
+} 
+
+.modal-open {
+  overflow: hidden;
 }
