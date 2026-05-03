@@ -542,6 +542,15 @@ const hero = document.getElementById("home");
   });
 
 document.body.classList.add("modal-open");
+const thumbsContainer = document.querySelector(".thumbs");
+
+if (thumbsContainer) {
+  thumbsContainer.onclick = (e) => {
+    if (e.target.tagName === "IMG") {
+      document.getElementById("gameImage").src = e.target.src;
+    }
+  };
+}
 }
 
 function goBack() { 
