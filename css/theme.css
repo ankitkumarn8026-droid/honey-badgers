@@ -1085,3 +1085,55 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 	opacity: 1;
 	transform: translateY(0);
 }
+
+/* ============================= */
+/* SPA TRANSITION (ADD BELOW) */
+/* ============================= */
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.section-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+/* Game detail styling */
+#game-detail {
+  min-height: 100vh;
+  background: #0a0a0a;
+  padding: 60px 20px;
+  display: none;
+}
+
+/* Smooth image animation */
+#gameImage {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+#gameImage:hover {
+  transform: scale(1.05);
+}
+
+/* Back button styling */
+#game-detail button {
+  background: #f39c12;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#game-detail button:hover {
+  background: #ffb84d;
+}
