@@ -1139,6 +1139,5 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 } 
 
 .modal-open {
-  position: fixed;
-  width: 100%;
+overflow: hidden;
 }
