@@ -541,7 +541,6 @@ const hero = document.getElementById("home");
   behavior: "smooth"
   });
 
-document.body.style.overflow = "hidden";
 document.body.classList.add("modal-open");
 }
 
