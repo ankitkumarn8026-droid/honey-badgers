@@ -26,6 +26,9 @@ body {
 	color: var(--text-light);
 	overflow-x: hidden;
 	line-height: 1.6;
+	min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 html, body {
@@ -1105,6 +1108,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 /* Game detail styling */
 #game-detail {
+  flex: 1;
   min-height: 100vh;
   background: #0a0a0a;
   padding: 60px 20px;
@@ -1139,5 +1143,5 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 } 
 
 .modal-open {
-overflow: hidden;
+  overflow-x: hidden;
 }
