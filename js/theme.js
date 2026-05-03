@@ -43,7 +43,8 @@ class PhotoCoverflow {
          item.addEventListener('click', () => {
             if (index === this.currentIndex) {
                // If clicking the center item, you could open a modal or link
-               console.log('Center item clicked');
+               const gameId = item.dataset.game;
+                 openGame(gameId);
             } else {
                this.goTo(index);
             }
@@ -448,4 +449,110 @@ if (slider && slides.length > 0) {
 }
 if (slides.length > 0) {
   showSlide(index);
-} });
+}
+
+});
+// ✅ YAHAN ADD KARO
+const games = {
+  
+   
+    callisto: {
+    title: "THE CALLISTO PROTOCOL",
+    desc: "The Callisto Protocol is a 2022 survival horror game",
+    image: "images/game_imgaes/callisto_protocol.jpg"},
+   
+   
+    genshin: {
+    title: "GENSHIN IMPACT",
+    desc: "Open world RPG game",
+    image: "images/game_imgaes/genshin_impact.jpg"},
+    
+   
+    valorant: {
+    title: "VALORANT",
+    desc: "FPS shooter",
+    image: "images/game_imgaes/valorant.jpg"}, 
+   
+    
+    hogwarts: {
+    title: "HOGWARTS LEGACY",
+    desc: "Role-Playing Video Game",
+    image: "images/game_imgaes/hogwarts_legacy.jpg"}, 
+   
+    
+    eternights: {
+    title: "ETERNIGHTS",
+    desc: "Eternights is a 2023 dating sim action role-playing game",
+    image: "images/game_imgaes/eternights.jpg"},
+   
+   
+    blood_west: {
+    title: "BLOOD WEST",
+    desc: "Blood West is an immersive Wild West FPS where, as a revenant desperado, you take on the twisted demons and eldritch horrors",
+    image: "images/game_imgaes/blood_west.jpg"},
+   
+   
+    we_were_here: {
+    title: "WE WERE HERE TOGETHER",
+    desc: "We Were Here Together is a must-play for fans of both co-op adventures and challenging puzzle Game",
+    image: "images/game_imgaes/we_were_here_together.jpg"},
+   
+   
+    honkai: {
+    title: "HONKAI STARRAIL",
+    desc: "Honkai: Star Rail is a 2023 free-to-play role-playing gacha video game",
+    image: "images/game_imgaes/honkai_star_rail.jpg"},
+   
+   
+    where_winds_meet: {
+    title: "WHERE WINDS MEET",
+    desc: "Open world martial arts RPG",
+    image: "images/game_imgaes/where_winds_meet.jpg"}
+
+
+};
+
+function openGame(gameId) {
+  const game = games[gameId];
+
+if (!game) {
+  console.error("Game not found:", gameId);
+  return;
+}
+  const title = document.getElementById("gameTitle");
+if (title) title.innerText = game.title;
+   
+  const game_Desc= document.getElementById("gameDesc");
+   if (game_desc) game_desc.innerText = game.desc;
+
+  const image = document.getElementById("gameImage");
+   if(image) image.src = game.image;
+
+const portfolio = document.getElementById("portfolio");
+const detail = document.getElementById("game-detail");
+
+   if (portfolio) portfolio.style.display = "none";
+   if (detail) detail.style.display = "block";
+
+  window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
+
+   
+}
+
+function goBack() { 
+                   const detail = document.getElementById("game-detail");
+                   const portfolio = document.getElementById("portfolio");
+
+                   if (detail) detail.style.display = "none";
+                   if (portfolio) portfolio.style.display = "block";
+                  
+                    window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"});
+                  
+                  }
+
+
