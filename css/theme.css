@@ -1127,7 +1127,8 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 }
 
 /* Back button styling */
-#game-detail button {
+
+.back-btn {
   background: #f39c12;
   border: none;
   padding: 10px 20px;
@@ -1138,10 +1139,53 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   margin-bottom: 20px;
 }
 
-#game-detail button:hover {
+.back-btn:hover {
   background: #ffb84d;
-} 
+}
 
 .modal-open {
   overflow-x: hidden;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.game-media .main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbs img {
+  width: 100px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.thumbs img:hover {
+  transform: scale(1.05);
+}
+
+.game-info {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.download-btn {
+  background: #f39c12;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
