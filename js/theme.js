@@ -539,10 +539,10 @@ const hero = document.getElementById("home");
   window.scrollTo({
   top: 0,
   behavior: "smooth"
-  document.body.style.overflow = "hidden";
-});
+  });
 
-   
+document.body.style.overflow = "hidden";
+document.body.classList.add("modal-open");
 }
 
 function goBack() { 
@@ -557,7 +557,11 @@ function goBack() {
                     top: 0,
                     behavior: "smooth"});
                     document.body.style.overflow = "";
+                    document.body.classList.remove("modal-open");
                   
                   }
+
+
+
 
 
