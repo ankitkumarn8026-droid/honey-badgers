@@ -474,10 +474,17 @@ const games = {
     image: "images/game_imgaes/valorant.jpg"}, 
    
     
-    hogwarts: {
-    title: "HOGWARTS LEGACY",
-    desc: "Role-Playing Video Game",
-    image: "images/game_imgaes/hogwarts_legacy.jpg"}, 
+   hogwarts: {
+  title: "HOGWARTS LEGACY",
+  desc: "Role-Playing Video Game",
+  image: "images/game_imgaes/hogwarts_legacy.jpg",
+
+  thumbs: [
+    "images/game_imgaes/hogwarts_1.jpg",
+    "images/game_imgaes/hogwarts_2.jpg",
+    "images/game_imgaes/hogwarts_3.jpg"
+  ]
+}, 
    
     
     eternights: {
@@ -531,6 +538,15 @@ if (gameDesc) gameDesc.innerText = game.desc;
 const portfolio = document.getElementById("portfolio");
 const detail = document.getElementById("game-detail");
 const hero = document.getElementById("home");
+const thumbs = document.querySelectorAll(".thumbs img");   
+
+    if (game.thumbs) {
+    thumbs.forEach((img, index) => {
+      if (game.thumbs[index]) {
+        img.src = game.thumbs[index];
+      }
+    });
+  }
 
    if (hero) hero.style.display = "none";
    if (portfolio) portfolio.style.display = "none";
