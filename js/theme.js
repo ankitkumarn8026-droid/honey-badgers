@@ -522,8 +522,8 @@ if (!game) {
   const title = document.getElementById("gameTitle");
 if (title) title.innerText = game.title;
    
-  const game_Desc= document.getElementById("gameDesc");
-   if (game_desc) game_desc.innerText = game.desc;
+const gameDesc = document.getElementById("gameDesc");
+if (gameDesc) gameDesc.innerText = game.desc;
 
   const image = document.getElementById("gameImage");
    if(image) image.src = game.image;
