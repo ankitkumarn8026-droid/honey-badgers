@@ -530,13 +530,16 @@ if (gameDesc) gameDesc.innerText = game.desc;
 
 const portfolio = document.getElementById("portfolio");
 const detail = document.getElementById("game-detail");
+const hero = document.getElementById("home");
 
+   if (hero) hero.style.display = "none";
    if (portfolio) portfolio.style.display = "none";
    if (detail) detail.style.display = "block";
 
   window.scrollTo({
   top: 0,
   behavior: "smooth"
+  document.body.style.overflow = "hidden";
 });
 
    
@@ -545,13 +548,15 @@ const detail = document.getElementById("game-detail");
 function goBack() { 
                    const detail = document.getElementById("game-detail");
                    const portfolio = document.getElementById("portfolio");
+                   const hero = document.getElementById("home");
 
                    if (detail) detail.style.display = "none";
-                   if (portfolio) portfolio.style.display = "block";
-                  
+                   if (portfolio) portfolio.style.display = "";
+                   if (hero) hero.style.display = "";
                     window.scrollTo({
                     top: 0,
                     behavior: "smooth"});
+                    document.body.style.overflow = "";
                   
                   }
 
