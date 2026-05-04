@@ -1149,12 +1149,11 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 .game-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;;
   gap: 30px;
   max-width: 1300px;
   margin: auto;
   align-items: start;
-  flex-wrap: wrap;
 }
 
 .game-media .main-image {
@@ -1177,9 +1176,11 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   background: #111;
   padding: 15px;
   border-radius: 12px;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
+  width: 900px;
+  max-width: none;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;	 
 }
 
 .thumbs {
@@ -1210,6 +1211,9 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   padding: 25px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.05);
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;	
 }
 
 .game-info h1 {
@@ -1225,10 +1229,8 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .game-description {
   grid-column: 1 / -1;  /* 🔥 FULL WIDTH */
   margin-top: 30px;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  padding: 10px 0;
+  line-height: 1.6;
 }
 
 .tags span {
