@@ -1168,8 +1168,11 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 .game-media img {
   width: 100%;
+  max-height: 450px;  
+  object-fit: cover; 	
   height: auto;
   border-radius: 10px;
+  border-radius: 10px;	
 }
 
 .game-media {
