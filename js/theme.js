@@ -459,7 +459,10 @@ const games = {
     callisto: {
     title: "THE CALLISTO PROTOCOL",
     desc: "The Callisto Protocol is a 2022 survival horror game",
-    image: "images/game_imgaes/callisto_protocol.jpg"},
+    image: "images/game_imgaes/callisto_protocol.jpg"
+    
+    
+    },
    
    
     genshin: {
@@ -490,7 +493,25 @@ const games = {
     eternights: {
     title: "ETERNIGHTS",
     desc: "Eternights is a 2023 dating sim action role-playing game",
-    image: "images/game_imgaes/eternights.jpg"},
+    image: "images/game_imgaes/eternights.jpg",
+    about: `Eternights is a dating action game where you try to make the most out of life during the apocalypse. Monday: Go on a date. Tuesday: Clear dungeon. Friday: Freak out! The clock is ticking!!
+    
+Save the world, and find love along the way.
+Eternights an dating action game, blending a love story with adrenaline-driven combat as you make the most out of life during the apocalypse. Scavenge for supplies, explore dungeons... and go on dates!
+
+Face the infected
+One day, something, or someone, has turned humans into dangerous monsters. All that interests them now is violence and power. They are what stand between you, a cure, and the world you want. Most importantly? You’re fighting for more than just your own survival – you are fighting for those you love. 
+Find Love
+The impending end of the world makes for a great conversation starter! When you’re not exploring dungeons, you can choose to spend time growing closer to a cast of five quirky and loveable characters. Explore their stories and grow closer to them to unlock unique skills and spells you can use in battle. Race the Clock
+Scavenging, dungeon crawling, dating…there are just too many things to do in one day, and each area has a deadline! Will you grow closer to your confidant in order to deepen your relationship and unlock new skills? Will you scavenge the wasteland for supplies? Will you grow stronger by training with your companions? Or will you ignore all of that and go to the dungeon the first chance you get? It’s up to you, but remember, the clock is ticking. Explore Dungeons
+These dangerous areas - known as the "Wall" - are filled with mystery and danger. As the deadline looms, you will have to quickly overcome traps, puzzles, and dancing minigames to make it through in time. Luckily, you have your confidants by your side to help when things get scary.
+
+Animated Cutscenes
+There are several fully 2D animated cutscenes that change depending on who you decide to date. Immerse yourself and truly connect with the characters you are spending time with.` ,
+    genre: "Action RPG",
+    release: "12 Sep 2023",
+    developer: "Studio Sai"
+     },
    
    
     blood_west: {
@@ -534,7 +555,20 @@ if (gameDesc) gameDesc.innerText = game.desc;
 
   const image = document.getElementById("gameImage");
    if(image) image.src = game.image;
+   
+const gameGenre = document.getElementById("gameGenre");
+if (gameGenre) gameGenre.innerText = game.genre;
 
+const gameRelease = document.getElementById("gameRelease");
+if (gameRelease) gameRelease.innerText = game.release;
+
+const gameDeveloper = document.getElementById("gameDeveloper");
+if (gameDeveloper) gameDeveloper.innerText = game.developer;
+
+const gameAbout = document.getElementById("gameAbout");
+if (gameAbout) gameAbout.innerText = game.about;
+
+   
 const portfolio = document.getElementById("portfolio");
 const detail = document.getElementById("game-detail");
 const hero = document.getElementById("home");
