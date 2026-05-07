@@ -1285,6 +1285,19 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
     margin-top:12px;
 }
 
+#gameAbout::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background:linear-gradient(to bottom, transparent, #000);
+}
+
+#gameAbout.expanded::after{
+    display:none;
+}
 
 .tags span {
   background: #222;
