@@ -378,6 +378,30 @@ function nextSlide() {
     });
   });
 }
+
+   const aboutBtn = document.getElementById("toggleAboutBtn");
+const gameAbout = document.getElementById("gameAbout");
+
+if (aboutBtn && gameAbout) {
+
+   aboutBtn.addEventListener("click", () => {
+
+      gameAbout.classList.toggle("expanded");
+
+      if (gameAbout.classList.contains("expanded")) {
+
+         aboutBtn.innerText = "See Less";
+
+      } else {
+
+         aboutBtn.innerText = "See More";
+
+      }
+
+   });
+
+}
+   
    
 function prevSlide() {
   if (slides.length === 0) return;
