@@ -510,7 +510,7 @@ const gameDeveloper = document.getElementById("gameDeveloper");
 if (gameDeveloper) gameDeveloper.innerText = game.developer;
 
 const gameAbout = document.getElementById("gameAbout");
-if (gameAbout) gameAbout.innerText = game.about;
+if (gameAbout) gameAbout.innerHTM = game.about;
 
    
 const portfolio = document.getElementById("portfolio");
