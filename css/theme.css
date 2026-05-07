@@ -1236,6 +1236,33 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   line-height: 1.6;
 }
 
+#gameAbout{
+    color:#e6e6e6;
+    font-size:18px;
+    line-height:1.9;
+    font-weight:400;
+}
+
+#gameAbout b{
+    display:block;
+    margin-top:35px;
+    margin-bottom:18px;
+    font-size:28px;
+    font-weight:700;
+    color:#ffffff;
+}
+
+#gameAbout p{
+    margin-bottom:22px;
+}
+
+#gameAbout br{
+    content:"";
+    display:block;
+    margin-top:12px;
+}
+
+
 .tags span {
   background: #222;
   padding: 5px 10px;
