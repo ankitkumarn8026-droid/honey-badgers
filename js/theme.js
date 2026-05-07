@@ -455,20 +455,34 @@ if (slides.length > 0) {
 
 let games = {};
 
-fetch("data/fixed_game_data.json")
-  .then(response => response.json())
-  .then(data => {
-    games = data;
-    console.log("Games loaded:", games);
-  })
-  .catch(error => {
-    console.error("JSON load error:", error);
-  });
+async function loadGames() {
+  try {
+    const response = await fetch("./data/fixed_game_data.json");
 
-if (!Object.keys(games).length) {
-  console.log("Games not loaded yet");
-  return;
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    games = await response.json();
+
+    console.log("Games loaded:", games);
+
+  } catch (error) {
+    console.error("JSON load error:", error);
+
+    const loader = document.getElementById("loadingScreen");
+
+    if (loader) {
+      loader.innerHTML = `
+        <p style="color:white;text-align:center;">
+          Failed to load game data
+        </p>
+      `;
+    }
+  }
 }
+
+loadGames();
 
 function openGame(gameId) {
   const game = games[gameId];
