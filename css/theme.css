@@ -1159,7 +1159,16 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .game-media .main-image {
   width: 100%;
   border-radius: 10px;
+  	
 }
+
+.main-image{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
 @media (max-width: 900px) {
   .game-container {
     grid-template-columns: 1fr;
@@ -1178,12 +1187,14 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 .game-media {
   background: #111;
   padding: 15px;
+  flex:2;	
   border-radius: 12px;
   width: 900px;
   max-width: none;
   margin: 0;
   grid-column: 1;
   grid-row: 1;	 
+  height:100%;	
 }
 
 .thumbs {
@@ -1219,6 +1230,10 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   align-self: start;
   position: sticky;
   top: 100px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+   min-height:100%;	
 }
 
 .game-info h1 {
