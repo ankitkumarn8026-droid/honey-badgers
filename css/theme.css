@@ -1216,7 +1216,9 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   border: 1px solid rgba(255,255,255,0.05);
   grid-column: 2;
   grid-row: 1;
-  align-self: start;	
+  align-self: start;
+  position: sticky;
+  top: 100px;
 }
 
 .game-info h1 {
@@ -1297,6 +1299,11 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
 
 #gameAbout.expanded::after{
     display:none;
+}
+
+.thumbs img.active{
+   border:2px solid #ff9800;
+   transform:scale(1.05);
 }
 
 .tags span {
