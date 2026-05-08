@@ -9,8 +9,8 @@ class PhotoCoverflow {
    constructor() {
       this.items = document.querySelectorAll('.coverflow-item');
       this.indicators = document.querySelectorAll('#coverflowContainer .indicator');
-      this.currentIndex = 4; // Start with middle item
       this.totalItems = this.items.length;
+      this.currentIndex = Math.floor(this.totalItems / 2);
       this.isPlaying = false;
       this.autoPlayInterval = null;
       this.autoPlaySpeed = 4000;
@@ -489,7 +489,13 @@ async function loadGames() {
 
     games = await response.json();
 
-    console.log("Games loaded:", games);
+     console.log("Games loaded:", games);
+
+     const savedGame = localStorage.getItem("activeGame");
+
+if (savedGame && games[savedGame]) {
+   openGame(savedGame);
+}
 
   } catch (error) {
     console.error("JSON load error:", error);
@@ -508,7 +514,9 @@ async function loadGames() {
 
 loadGames();
 
+
 function openGame(gameId) {
+   localStorage.setItem("activeGame", gameId);
   const game = games[gameId];
 
 if (!game) {
@@ -536,6 +544,15 @@ if (gameDeveloper) gameDeveloper.innerText = game.developer;
 const gameAbout = document.getElementById("gameAbout");
 if (gameAbout) gameAbout.innerHTML = game.about;
 
+if (gameAbout) {
+   gameAbout.classList.remove("expanded");
+}
+
+const aboutBtn = document.getElementById("toggleAboutBtn");
+
+if (aboutBtn) {
+   aboutBtn.innerText = "See More";
+}
    
 const portfolio = document.getElementById("portfolio");
 const detail = document.getElementById("game-detail");
@@ -562,20 +579,25 @@ const thumbs = document.querySelectorAll(".thumbs img");
 document.body.classList.add("modal-open");
 const thumbsContainer = document.querySelector(".thumbs");
 
-if (thumbsContainer) {
-  thumbsContainer.onclick = (e) => {
-    if (e.target.tagName === "IMG") {
+thumbsContainer.onclick = (e) => {
+
+   if (e.target.tagName === "IMG") {
+
+      thumbs.forEach(img => img.classList.remove("active"));
+
+      e.target.classList.add("active");
+
       document.getElementById("gameImage").src = e.target.src;
-    }
-  };
-}
+   }
+
+};
 }
 
-function goBack() { 
+function goBack() { localStorage.removeItem("activeGame");
                    const detail = document.getElementById("game-detail");
                    const portfolio = document.getElementById("portfolio");
                    const hero = document.getElementById("home");
-
+                   
                    if (detail) detail.style.display = "none";
                    if (portfolio) portfolio.style.display = "";
                    if (hero) hero.style.display = "";
