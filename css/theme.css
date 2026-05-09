@@ -181,9 +181,13 @@ nav {
 .logo img {
   height: 95px;
   width: auto;
-  filter: drop-shadow(0 0 6px gold)
-          drop-shadow(0 0 12px rgba(255, 165, 0, 0.5));
-	margin-left: 0;
+  filter:
+    drop-shadow(0 0 4px rgba(255, 215, 0, 0.6))
+    drop-shadow(0 0 10px rgba(255, 140, 0, 0.35));
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
 }
 
 .logo span {
@@ -192,7 +196,15 @@ nav {
 }
 
 .logo:hover {
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.logo img:hover {
+  transform: scale(1.04);
+
+  filter:
+    drop-shadow(0 0 6px rgba(255, 215, 0, 0.8))
+    drop-shadow(0 0 14px rgba(255, 140, 0, 0.5));
 }
 
 .logo svg {
@@ -208,6 +220,14 @@ nav {
 	transform: rotate(-5deg) scale(1.05);
 }
 
+
+@media (max-width: 768px){
+
+  .logo img{
+    height: 72px;
+  }
+
+}
 .nav-menu {
 	display: flex;
 	list-style: none;
