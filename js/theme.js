@@ -426,18 +426,29 @@ if (slides.length > 0) {
 
   img.src = bgImage;
 
-  img.onload = () => {
+ img.onload = () => {
 
-    // Show hero content after image load
-    if (heroContent) {
-      heroContent.style.transition = "opacity 0.8s ease";
-      heroContent.style.opacity = "1";
-    }
+  if (heroContent) {
+    heroContent.style.transition = "opacity 0.8s ease";
+    heroContent.style.opacity = "1";
+  }
 
-  };
+  const title = document.querySelector(".typing-title");
+  const subtitle = document.querySelector(".typing-subtitle");
 
-}
+  if (title) {
+    title.style.animation = "none";
+    title.offsetHeight;
+    title.style.animation = "";
+  }
 
+  if (subtitle) {
+    subtitle.style.animation = "none";
+    subtitle.offsetHeight;
+    subtitle.style.animation = "";
+  }
+
+};
 function resetAutoSlide() {
   if (autoSlide) clearInterval(autoSlide);
   autoSlide = setInterval(nextSlide, 4000);
