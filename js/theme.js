@@ -337,13 +337,13 @@ const subtitle = document.querySelector(".typing-subtitle");
 
 if (title) {
    setTimeout(() => {
-      title.classList.add("finished");
+      title.style.borderRight = "none";
    }, 3000);
 }
 
 if (subtitle) {
    setTimeout(() => {
-      subtitle.classList.add("finished");
+      subtitle.style.borderRight = "none";
    }, 5200);
 }
    // tumhara existing code ...
