@@ -241,11 +241,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const loader = document.getElementById('loadingScreen');
 
 if (loader) {
-  setTimeout(() => {
-    loader.classList.add('hidden');
-  }, 1000);
+  loader.style.display = "flex";
 }
-
    // Header scroll effect
    const header = document.getElementById('header');
 if (header) {
@@ -427,6 +424,10 @@ if (slides.length > 0) {
   img.src = bgImage;
 
  img.onload = () => {
+     
+    if (loader) {
+    loader.classList.add("hidden");
+  }
 
   if (heroContent) {
     heroContent.style.transition = "opacity 0.8s ease";
@@ -449,6 +450,11 @@ if (slides.length > 0) {
   }
 
 };
+
+   autoSlide = setInterval(nextSlide, 4000);
+
+}
+   
 function resetAutoSlide() {
   if (autoSlide) clearInterval(autoSlide);
   autoSlide = setInterval(nextSlide, 4000);
@@ -503,9 +509,6 @@ if (slider && slides.length > 0) {
       resetAutoSlide();
     }
   }
-}
-if (slides.length > 0) {
-  showSlide(index);
 }
 
 });
