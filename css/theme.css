@@ -387,7 +387,8 @@ nav {
   letter-spacing: -2px;
   margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto;	
+  margin-right: auto;
+  	
 	
 background: linear-gradient(90deg, #ff8c00, #ff3d00, #ffd700);
   -webkit-background-clip: text;
@@ -397,6 +398,10 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   transition: 0.3s ease;
 }
 
+.hero-title,
+.hero-subtitle{
+   max-width:100%;
+}
 .typing-title{
   display:block;
 
@@ -409,32 +414,33 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   border-right:3px solid #ff9800;
 
   animation:
-    typingTitle 2.5s steps(18,end) forwards,
-    blinkCursor .7s step-end infinite;
+    typingTitle 2.5s steps(20,end) forwards,
+    blinkCursor .7s step-end 5;
 }
+
+
 @keyframes typingTitle{
   from{
     width:0;
   }
 
   to{
-    width:18ch;
+    width:20ch;
   }
 }
 
-.typing-title.finished,
-.typing-subtitle.finished {
-  border-right: none;
 
-}
 
 .hero-subtitle {
 	font-size: clamp(1rem, 2vw, 1.3rem);
 	color: #e0e0e0;
-	margin-bottom: 40px;
+	margin-bottom: 55px;
 	font-weight: 300;
 	letter-spacing: 2px;
+	min-height:40px;
 }
+
+
 .typing-subtitle{
   display:block;
 
@@ -442,16 +448,17 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   white-space:nowrap;
 
   width:0;
-  margin:20px auto 0;
 
-  border-right:2px solid #aaa;
+  margin:0 auto;
+
+  border-right:2px solid #ff9800;
 
   opacity:0;
 
   animation:
-    showSub 0.1s forwards 2.5s,
-    typingSub 2s steps(24,end) 2.6s forwards,
-    blinkCursor .7s step-end infinite 2.6s;
+    showSub 0s forwards 2.5s,
+    typingSub 2.4s steps(24,end) 2.5s forwards,
+    blinkCursor .7s step-end 4 2.5s;
 }
 @keyframes showSub {
   to { opacity: 1; }
@@ -464,7 +471,7 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   }
 
   to{
-    width:24ch;
+    width:25ch;
   }
 }
 
@@ -1233,8 +1240,8 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   padding: 15px;
   flex:2;	
   border-radius: 12px;
-  width: 900px;
-  max-width: none;
+  width: 100%;
+  max-width: 900px;
   margin: 0;
   grid-column: 1;
   grid-row: 1;	 
