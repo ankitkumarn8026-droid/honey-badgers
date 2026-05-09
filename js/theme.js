@@ -402,7 +402,40 @@ function prevSlide() {
 let autoSlide;
 
 if (slides.length > 0) {
-  autoSlide = setInterval(nextSlide, 4000);
+
+  const heroContent = document.querySelector(".hero-content");
+
+  // Hide content initially
+  if (heroContent) {
+    heroContent.style.opacity = "0";
+  }
+
+  showSlide(index);
+
+  // Get first active slide
+  const firstSlide = slides[index];
+
+  // Extract background image URL
+  const bgImage = window.getComputedStyle(firstSlide)
+    .backgroundImage
+    .replace(/^url\(["']?/, "")
+    .replace(/["']?\)$/, "");
+
+  // Preload image
+  const img = new Image();
+
+  img.src = bgImage;
+
+  img.onload = () => {
+
+    // Show hero content after image load
+    if (heroContent) {
+      heroContent.style.transition = "opacity 0.8s ease";
+      heroContent.style.opacity = "1";
+    }
+
+  };
+
 }
 
 function resetAutoSlide() {
