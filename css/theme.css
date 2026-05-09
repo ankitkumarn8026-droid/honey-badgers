@@ -381,10 +381,13 @@ nav {
 
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 5rem);
+  width:max-content;	
   font-weight: 900;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: -2px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;	
 	
 background: linear-gradient(90deg, #ff8c00, #ff3d00, #ffd700);
   -webkit-background-clip: text;
@@ -394,20 +397,33 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   transition: 0.3s ease;
 }
 
-.typing-title {
-  overflow: hidden;
-  white-space: nowrap;
+.typing-title{
+  display:inline-block;
 
-  width: 0;
-  animation: typingTitle 2.5s steps(25, end) forwards,
-             blink 0.7s infinite;
+  overflow:hidden;
+  white-space:nowrap;
+
+  width:0;
+  max-width:max-content;
+
+  border-right:3px solid #ff9800;
+
+  animation:
+    typingTitle 2.5s steps(25,end) forwards,
+    blinkCursor .7s step-end infinite;
 }
 
-@keyframes typingTitle {
-  from { width: 0; }
-  to { width: 100%; }
-}
+@keyframes typingTitle{
 
+  from{
+    width:0;
+  }
+
+  to{
+    width:100%;
+  }
+
+}
 .typing-title,
 .typing-subtitle {
   display: inline-block;
@@ -451,10 +467,17 @@ text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
   to { width: 100%; }
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
-}
+@keyframes blinkCursor{
 
+  0%,50%{
+    border-color:#ff9800;
+  }
+
+  51%,100%{
+    border-color:transparent;
+  }
+
+}
 
 .cta-button {
 	display: inline-block;
