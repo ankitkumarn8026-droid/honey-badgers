@@ -566,7 +566,9 @@ const gameDesc = document.getElementById("gameDesc");
 if (gameDesc) gameDesc.innerText = game.desc;
 
   const image = document.getElementById("gameImage");
-   if(image) image.src = game.image;
+   if (image) {
+  image.src = game.thumbs?.[0] || game.image;
+}
    
 const gameGenre = document.getElementById("gameGenre");
 if (gameGenre) gameGenre.innerText = game.genre;
@@ -593,15 +595,31 @@ if (aboutBtn) {
 const portfolio = document.getElementById("portfolio");
 const detail = document.getElementById("game-detail");
 const hero = document.getElementById("home");
-const thumbs = document.querySelectorAll(".thumbs img");   
+const thumbsContainer = document.querySelector(".thumbs");
 
-    if (game.thumbs) {
-    thumbs.forEach((img, index) => {
-      if (game.thumbs[index]) {
-        img.src = game.thumbs[index];
-      }
+if (thumbsContainer && game.thumbs) {
+  thumbsContainer.innerHTML = "";
+  game.thumbs.forEach((thumb, index) => {
+    const img = document.createElement("img");
+    img.src = thumb;
+
+    if (index === 0) {
+      img.classList.add("active");
+    }
+    img.addEventListener("click", () => {
+      document.querySelectorAll(".thumbs img")
+        .forEach(i => i.classList.remove("active"));
+      img.classList.add("active");
+      document.getElementById("gameImage").src = thumb;
+
     });
-  }
+
+    thumbsContainer.appendChild(img);
+
+  });
+
+}
+   
 
    if (hero) hero.style.display = "none";
    if (portfolio) portfolio.style.display = "none";
@@ -613,20 +631,8 @@ const thumbs = document.querySelectorAll(".thumbs img");
   });
 
 document.body.classList.add("modal-open");
-const thumbsContainer = document.querySelector(".thumbs");
 
-thumbsContainer.onclick = (e) => {
 
-   if (e.target.tagName === "IMG") {
-
-      thumbs.forEach(img => img.classList.remove("active"));
-
-      e.target.classList.add("active");
-
-      document.getElementById("gameImage").src = e.target.src;
-   }
-
-};
 }
 
 function goBack() { localStorage.removeItem("activeGame");
