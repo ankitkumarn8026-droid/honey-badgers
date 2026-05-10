@@ -1,0 +1,193 @@
+/* =========================
+   GAMES PAGE
+========================= */
+
+.games-page{
+    padding: 140px 40px 80px;
+    background: #050505;
+    min-height: 100vh;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.games-banner{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.games-banner .section-title{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.games-banner .section-subtitle{
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* =========================
+   GAMES GRID
+========================= */
+
+.games-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* =========================
+   GAME CARD
+========================= */
+
+.game-card{
+    background: #0c0c0c;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.game-card:hover{
+    transform: translateY(-8px);
+    border-color: #ff9900;
+    box-shadow: 0 0 25px rgba(255,153,0,0.3);
+}
+
+/* =========================
+   GAME IMAGE
+========================= */
+
+.game-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.game-image img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.game-card:hover .game-image img{
+    transform: scale(1.05);
+}
+
+/* =========================
+   GAME INFO
+========================= */
+
+.game-info{
+    padding: 18px;
+}
+
+.game-title{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.game-achievements{
+    color: #9a9a9a;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   DOWNLOAD BUTTON
+========================= */
+
+.Download-btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#ff9900,#ffb300);
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.Download-btn i{
+    margin-right: 8px;
+}
+
+.Download-btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255,153,0,0.4);
+}
+
+/* =========================
+   LOAD MORE BUTTON
+========================= */
+
+.load-more-wrapper{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.load-more-btn{
+    padding: 14px 35px;
+    border: none;
+    border-radius: 50px;
+    background: #ff9900;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.load-more-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255,153,0,0.4);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+    .games-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .games-page{
+        padding: 120px 20px 60px;
+    }
+
+    .games-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .game-image img{
+        height: 280px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .games-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .games-banner .section-title{
+        font-size: 2rem;
+    }
+
+}
