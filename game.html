@@ -47,7 +47,7 @@
   <div class="games-banner">
       <div class="library-header">
     <h2>Game Library</h2>
-    <span id="gameCounter">Showing 8 of 40 Games</span>
+    <p id="gameCounter"></p>
 </div>
     <h1 class="section-title">Game Library</h1>
     <p class="section-subtitle">
@@ -1038,6 +1038,7 @@
 <script>
 const loadMoreBtn = document.querySelector(".load-more-btn");
 const gameCards = document.querySelectorAll(".game-card");
+const gameCounter = document.getElementById('gameCounter');    
 
 let currentItems = 8;
 
@@ -1046,6 +1047,16 @@ gameCards.forEach((card, index) => {
     card.style.display = "none";
   }
 });
+
+
+    function updateCounter() {
+    gameCounter.textContent =
+        `Showing ${Math.min(visibleGames, totalGames)} of ${totalGames} Games`;
+}
+
+updateCounter();
+
+    
 
 loadMoreBtn.addEventListener("click", () => {
   currentItems += 8;
