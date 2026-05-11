@@ -46,7 +46,6 @@
   <!-- PAGE HEADER -->
   <div class="games-banner">
       <div class="library-header">
-    <h2>Game Library</h2>
     <p id="gameCounter"></p>
 </div>
     <h1 class="section-title">Game Library</h1>
@@ -1038,26 +1037,28 @@
 <script>
 const loadMoreBtn = document.querySelector(".load-more-btn");
 const gameCards = document.querySelectorAll(".game-card");
-const gameCounter = document.getElementById('gameCounter');    
+const gameCounter = document.getElementById("gameCounter");
 
 let currentItems = 8;
+const totalGames = gameCards.length;
 
+// Initial hide
 gameCards.forEach((card, index) => {
   if (index >= currentItems) {
     card.style.display = "none";
   }
 });
 
-
-    function updateCounter() {
-    gameCounter.textContent =
-        `Showing ${Math.min(visibleGames, totalGames)} of ${totalGames} Games`;
+// Counter update function
+function updateCounter() {
+  gameCounter.textContent =
+    `Showing ${Math.min(currentItems, totalGames)} of ${totalGames} Games`;
 }
 
+// Initial counter update
 updateCounter();
 
-    
-
+// Load More button
 loadMoreBtn.addEventListener("click", () => {
   currentItems += 8;
 
@@ -1067,7 +1068,10 @@ loadMoreBtn.addEventListener("click", () => {
     }
   });
 
-  if (currentItems >= gameCards.length) {
+  updateCounter();
+
+  // Hide button when all games visible
+  if (currentItems >= totalGames) {
     loadMoreBtn.style.display = "none";
   }
 });
