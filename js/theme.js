@@ -607,8 +607,9 @@ if (aboutBtn) {
 }
    
 const portfolio = document.getElementById("portfolio");
-const detail = document.getElementById("game-detail");
 const hero = document.getElementById("home");
+const gamesPage = document.querySelector(".games-page");
+const detail = document.getElementById("game-detail");
 const thumbsContainer = document.querySelector(".thumbs");
 
 if (thumbsContainer && game.thumbs) {
@@ -634,10 +635,19 @@ if (thumbsContainer && game.thumbs) {
 
 }
    
+if (hero) hero.style.display = "none";
 
-   if (hero) hero.style.display = "none";
-   if (portfolio) portfolio.style.display = "none";
-   if (detail) detail.style.display = "block";
+if (portfolio) {
+  portfolio.style.display = "none";
+}
+
+if (gamesPage) {
+  gamesPage.style.display = "none";
+}
+
+if (detail) {
+  detail.style.display = "block";
+}
 
   window.scrollTo({
   top: 0,
@@ -653,10 +663,23 @@ function goBack() { localStorage.removeItem("activeGame");
                    const detail = document.getElementById("game-detail");
                    const portfolio = document.getElementById("portfolio");
                    const hero = document.getElementById("home");
+                   const gamesPage = document.querySelector(".games-page");
                    
-                   if (detail) detail.style.display = "none";
-                   if (portfolio) portfolio.style.display = "";
-                   if (hero) hero.style.display = "";
+                   if (detail) {
+  detail.style.display = "none";
+}
+
+if (portfolio) {
+  portfolio.style.display = "";
+}
+
+if (hero) {
+  hero.style.display = "";
+}
+
+if (gamesPage) {
+  gamesPage.style.display = "";
+}
                     window.scrollTo({
                     top: 0,
                     behavior: "smooth"});
