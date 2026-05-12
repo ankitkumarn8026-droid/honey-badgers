@@ -550,6 +550,20 @@ if (savedGame && games[savedGame]) {
 
 loadGames();
 
+const libraryCards = document.querySelectorAll(".game-card");
+
+libraryCards.forEach(card => {
+
+  card.addEventListener("click", () => {
+
+    const gameId = card.dataset.game;
+
+    openGame(gameId);
+
+  });
+
+});
+
 
 function openGame(gameId) {
    localStorage.setItem("activeGame", gameId);
