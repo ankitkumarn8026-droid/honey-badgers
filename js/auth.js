@@ -51,17 +51,19 @@ createUserWithEmailAndPassword(auth, email, password)
     // Only profile data save
     set(ref(db, 'users/' + user.uid), {
 
-        firstName: firstName.trim(),
-        lastName: lastName.trim(),
-        email: email.trim()
+    firstName: firstName.trim(),
+    lastName: lastName.trim(),
+    email: email.trim()
 
-    });
+})
+
+.then(() => {
 
     alert("Account Created!");
 
     window.location.href = "index.html";
 
-})
+});
 
 .catch((error) => {
 
@@ -130,12 +132,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
    })
 
-   .catch((error) => {
+.catch((error) => {
 
-      successMsg.innerText = error.message;
+    if(error.code === "auth/invalid-credential"){
 
-   });
+        successMsg.innerText = "Invalid Email or Password";
 
+    }
+
+    else if(error.code === "auth/user-not-found"){
+
+        successMsg.innerText = "User Not Found";
+
+    }
+
+    else if(error.code === "auth/wrong-password"){
+
+        successMsg.innerText = "Wrong Password";
+
+    }
+
+    else{
+
+        successMsg.innerText = error.message;
+
+    }
+
+});
 }
 
     });
