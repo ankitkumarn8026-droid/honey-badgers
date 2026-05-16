@@ -1,5 +1,18 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+import {
+  getDatabase,
+  ref,
+  set
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyBTUpfkkJ8aCh-AvoqGSApfZbjUFcUCU1c",
@@ -10,7 +23,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-
+const auth = getAuth(app);
 // ✅ Signup function
 function signup() {
   const email = document.getElementById("email").value;
@@ -29,29 +42,33 @@ function signup() {
 
   }
 
-get(ref(db, 'users/' + email.trim().replace(/\./g, '_')))
-.then((snapshot) => {
-  if (snapshot.exists()) {
-    alert("User already exists");
-    return null; // ❗ important
-  }
+createUserWithEmailAndPassword(auth, email, password)
 
-  return set(ref(db, 'users/' + email.trim().replace(/\./g, '_')), {
-    firstName: firstName.trim(),
-    lastName: lastName.trim(),
-    email: email.trim(),
-    password: password.trim()
-  });
-})
-.then((result) => {
-  if (result === null) return; // ❗ stop here
+.then((userCredential) => {
 
-  alert("Account Created!");
-  window.location.href = "index.html";
+    const user = userCredential.user;
+
+    // Only profile data save
+    set(ref(db, 'users/' + user.uid), {
+
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        email: email.trim()
+
+    });
+
+    alert("Account Created!");
+
+    window.location.href = "index.html";
+
 })
+
 .catch((error) => {
-  console.log(error);
-  alert("Something went wrong");
+
+    console.log(error);
+
+    alert(error.message);
+
 });
 
 }
@@ -96,31 +113,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // 🔹 Final check
       if(valid){
-        get(ref(db, 'users/' + email.value.trim().replace(/\./g, '_')))
-        .then((snapshot) => {
-          if (snapshot.exists()) {
-            let data = snapshot.val();
 
-            if (data.password === password.value.trim()) {
-              successMsg.innerText = "Login Successful!";
+   signInWithEmailAndPassword(
+      auth,
+      email.value.trim(),
+      password.value.trim()
+   )
 
-              setTimeout(() => {
-                window.location.href = "index.html";
-              }, 1000);
+   .then((userCredential) => {
 
-            } else {
-              successMsg.innerText = "Wrong Password";
-            }
+      successMsg.innerText = "Login Successful!";
 
-          } else {
-            successMsg.innerText = "User Not Found";
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          successMsg.innerText = "Something went wrong";
-        });
-      }
+      setTimeout(() => {
+         window.location.href = "index.html";
+      }, 1000);
+
+   })
+
+   .catch((error) => {
+
+      successMsg.innerText = error.message;
+
+   });
+
+}
 
     });
   }
