@@ -199,9 +199,131 @@
 
 }
 
+    "gta_5": {
+    "title": "WHERE WINDS MEET",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_1.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_2.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_3.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_4.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_5.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_6.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
+  ], 
+
+    "about":"Where Winds Meet is an epic open-world action-adventure RPG rooted in the rich legacy of Wuxia. Set during the turbulent era of tenth-century China, you take on the role of a young sword master, uncovering forgotten truths and the mysteries of your own identity.<br><br><br><b>An Era on the Brink. A Hero on the Rise</b><br>Immerse yourself in the captivating Five Dynasties and Ten Kingdoms period of China, where epic battles and legendary tales come to life. From the bustling imperial capital to the hidden wilderness, every path is filled with secrets and adventures.<br><br><br>In this world, freedom carries weight. Stir up mischief and face challenges, or take the noble route: befriend villagers, forge alliances, and carve your legacy as a Wuxia hero. In a land of possibilities, become the spark that ignites change!<br><br><br><b>An Open World of Infinite Possibilities</b><br><br>Explore a vibrant world filled with life, from bustling cities to hidden temples in lush forests—all dynamically shaped by time, weather, and your choices. Experience Wuxia—style traversal: scale rooftops, glide through the air, or use fast travel to swiftly navigate between regions.<br><br><br>Uncover thousands of points of interest across 20+ unique regions. Interact with diverse characters, engage in authentic activities, explore ancient cities, discover forgotten tombs, play flutes beneath swaying willows, and enjoy drinks under lantern-lit skies.<br><br><br><b>Master Your Way of Wuxia Combat</b><br><br>Tailor your combat approach-melee, ranged, or stealth. Build a loadout that suits your playstyle. Engage in combat with classic Wuxia weapons—swords, spears, dual blades, rope dart, bows, fans, and umbrellas. Switch weapons and employ martial arts and mystic skills like Tai Chi to outmaneuver enemies.<br><br><br>Customize your character, choose your role, align with factions, and explore unique professions to shape your identity.<br><br><br><b>Adventure Alone or Forge Your Community</b><br><br>Embark on a narrative-driven adventure filled with rich solo gameplay, or team up with up to four friends for seamless co-op experiences.<br><br><br>Join or create a Guild to access group activities—intense guild wars, multiplayer dungeons, and epic raids. Show your skill in competitive duels, or enter a shared, evolving world with thousands of fellow adventurers.",
 
 
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
 
+}
+
+    "cyberpunk": {
+    "title": "WHERE WINDS MEET",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_1.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_2.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_3.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_4.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_5.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_6.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
+  ], 
+
+    "about":"Where Winds Meet is an epic open-world action-adventure RPG rooted in the rich legacy of Wuxia. Set during the turbulent era of tenth-century China, you take on the role of a young sword master, uncovering forgotten truths and the mysteries of your own identity.<br><br><br><b>An Era on the Brink. A Hero on the Rise</b><br>Immerse yourself in the captivating Five Dynasties and Ten Kingdoms period of China, where epic battles and legendary tales come to life. From the bustling imperial capital to the hidden wilderness, every path is filled with secrets and adventures.<br><br><br>In this world, freedom carries weight. Stir up mischief and face challenges, or take the noble route: befriend villagers, forge alliances, and carve your legacy as a Wuxia hero. In a land of possibilities, become the spark that ignites change!<br><br><br><b>An Open World of Infinite Possibilities</b><br><br>Explore a vibrant world filled with life, from bustling cities to hidden temples in lush forests—all dynamically shaped by time, weather, and your choices. Experience Wuxia—style traversal: scale rooftops, glide through the air, or use fast travel to swiftly navigate between regions.<br><br><br>Uncover thousands of points of interest across 20+ unique regions. Interact with diverse characters, engage in authentic activities, explore ancient cities, discover forgotten tombs, play flutes beneath swaying willows, and enjoy drinks under lantern-lit skies.<br><br><br><b>Master Your Way of Wuxia Combat</b><br><br>Tailor your combat approach-melee, ranged, or stealth. Build a loadout that suits your playstyle. Engage in combat with classic Wuxia weapons—swords, spears, dual blades, rope dart, bows, fans, and umbrellas. Switch weapons and employ martial arts and mystic skills like Tai Chi to outmaneuver enemies.<br><br><br>Customize your character, choose your role, align with factions, and explore unique professions to shape your identity.<br><br><br><b>Adventure Alone or Forge Your Community</b><br><br>Embark on a narrative-driven adventure filled with rich solo gameplay, or team up with up to four friends for seamless co-op experiences.<br><br><br>Join or create a Guild to access group activities—intense guild wars, multiplayer dungeons, and epic raids. Show your skill in competitive duels, or enter a shared, evolving world with thousands of fellow adventurers.",
+
+
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+}
+
+      "rdr_2": {
+    "title": "WHERE WINDS MEET",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_1.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_2.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_3.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_4.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_5.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_6.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
+  ], 
+
+    "about":"Where Winds Meet is an epic open-world action-adventure RPG rooted in the rich legacy of Wuxia. Set during the turbulent era of tenth-century China, you take on the role of a young sword master, uncovering forgotten truths and the mysteries of your own identity.<br><br><br><b>An Era on the Brink. A Hero on the Rise</b><br>Immerse yourself in the captivating Five Dynasties and Ten Kingdoms period of China, where epic battles and legendary tales come to life. From the bustling imperial capital to the hidden wilderness, every path is filled with secrets and adventures.<br><br><br>In this world, freedom carries weight. Stir up mischief and face challenges, or take the noble route: befriend villagers, forge alliances, and carve your legacy as a Wuxia hero. In a land of possibilities, become the spark that ignites change!<br><br><br><b>An Open World of Infinite Possibilities</b><br><br>Explore a vibrant world filled with life, from bustling cities to hidden temples in lush forests—all dynamically shaped by time, weather, and your choices. Experience Wuxia—style traversal: scale rooftops, glide through the air, or use fast travel to swiftly navigate between regions.<br><br><br>Uncover thousands of points of interest across 20+ unique regions. Interact with diverse characters, engage in authentic activities, explore ancient cities, discover forgotten tombs, play flutes beneath swaying willows, and enjoy drinks under lantern-lit skies.<br><br><br><b>Master Your Way of Wuxia Combat</b><br><br>Tailor your combat approach-melee, ranged, or stealth. Build a loadout that suits your playstyle. Engage in combat with classic Wuxia weapons—swords, spears, dual blades, rope dart, bows, fans, and umbrellas. Switch weapons and employ martial arts and mystic skills like Tai Chi to outmaneuver enemies.<br><br><br>Customize your character, choose your role, align with factions, and explore unique professions to shape your identity.<br><br><br><b>Adventure Alone or Forge Your Community</b><br><br>Embark on a narrative-driven adventure filled with rich solo gameplay, or team up with up to four friends for seamless co-op experiences.<br><br><br>Join or create a Guild to access group activities—intense guild wars, multiplayer dungeons, and epic raids. Show your skill in competitive duels, or enter a shared, evolving world with thousands of fellow adventurers.",
+
+
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+
+    }
+
+
+        "forza_horizon_5": {
+    "title": "WHERE WINDS MEET",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_1.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_2.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_3.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_4.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_5.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_6.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
+  ], 
+
+    "about":"Where Winds Meet is an epic open-world action-adventure RPG rooted in the rich legacy of Wuxia. Set during the turbulent era of tenth-century China, you take on the role of a young sword master, uncovering forgotten truths and the mysteries of your own identity.<br><br><br><b>An Era on the Brink. A Hero on the Rise</b><br>Immerse yourself in the captivating Five Dynasties and Ten Kingdoms period of China, where epic battles and legendary tales come to life. From the bustling imperial capital to the hidden wilderness, every path is filled with secrets and adventures.<br><br><br>In this world, freedom carries weight. Stir up mischief and face challenges, or take the noble route: befriend villagers, forge alliances, and carve your legacy as a Wuxia hero. In a land of possibilities, become the spark that ignites change!<br><br><br><b>An Open World of Infinite Possibilities</b><br><br>Explore a vibrant world filled with life, from bustling cities to hidden temples in lush forests—all dynamically shaped by time, weather, and your choices. Experience Wuxia—style traversal: scale rooftops, glide through the air, or use fast travel to swiftly navigate between regions.<br><br><br>Uncover thousands of points of interest across 20+ unique regions. Interact with diverse characters, engage in authentic activities, explore ancient cities, discover forgotten tombs, play flutes beneath swaying willows, and enjoy drinks under lantern-lit skies.<br><br><br><b>Master Your Way of Wuxia Combat</b><br><br>Tailor your combat approach-melee, ranged, or stealth. Build a loadout that suits your playstyle. Engage in combat with classic Wuxia weapons—swords, spears, dual blades, rope dart, bows, fans, and umbrellas. Switch weapons and employ martial arts and mystic skills like Tai Chi to outmaneuver enemies.<br><br><br>Customize your character, choose your role, align with factions, and explore unique professions to shape your identity.<br><br><br><b>Adventure Alone or Forge Your Community</b><br><br>Embark on a narrative-driven adventure filled with rich solo gameplay, or team up with up to four friends for seamless co-op experiences.<br><br><br>Join or create a Guild to access group activities—intense guild wars, multiplayer dungeons, and epic raids. Show your skill in competitive duels, or enter a shared, evolving world with thousands of fellow adventurers.",
+
+
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+}
+
+
+   "uncharted_lost_legacy": {
+    "title": "WHERE WINDS MEET",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_1.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_2.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_3.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_4.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_5.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_6.webp",
+    "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
+  ], 
+
+    "about":"Where Winds Meet is an epic open-world action-adventure RPG rooted in the rich legacy of Wuxia. Set during the turbulent era of tenth-century China, you take on the role of a young sword master, uncovering forgotten truths and the mysteries of your own identity.<br><br><br><b>An Era on the Brink. A Hero on the Rise</b><br>Immerse yourself in the captivating Five Dynasties and Ten Kingdoms period of China, where epic battles and legendary tales come to life. From the bustling imperial capital to the hidden wilderness, every path is filled with secrets and adventures.<br><br><br>In this world, freedom carries weight. Stir up mischief and face challenges, or take the noble route: befriend villagers, forge alliances, and carve your legacy as a Wuxia hero. In a land of possibilities, become the spark that ignites change!<br><br><br><b>An Open World of Infinite Possibilities</b><br><br>Explore a vibrant world filled with life, from bustling cities to hidden temples in lush forests—all dynamically shaped by time, weather, and your choices. Experience Wuxia—style traversal: scale rooftops, glide through the air, or use fast travel to swiftly navigate between regions.<br><br><br>Uncover thousands of points of interest across 20+ unique regions. Interact with diverse characters, engage in authentic activities, explore ancient cities, discover forgotten tombs, play flutes beneath swaying willows, and enjoy drinks under lantern-lit skies.<br><br><br><b>Master Your Way of Wuxia Combat</b><br><br>Tailor your combat approach-melee, ranged, or stealth. Build a loadout that suits your playstyle. Engage in combat with classic Wuxia weapons—swords, spears, dual blades, rope dart, bows, fans, and umbrellas. Switch weapons and employ martial arts and mystic skills like Tai Chi to outmaneuver enemies.<br><br><br>Customize your character, choose your role, align with factions, and explore unique professions to shape your identity.<br><br><br><b>Adventure Alone or Forge Your Community</b><br><br>Embark on a narrative-driven adventure filled with rich solo gameplay, or team up with up to four friends for seamless co-op experiences.<br><br><br>Join or create a Guild to access group activities—intense guild wars, multiplayer dungeons, and epic raids. Show your skill in competitive duels, or enter a shared, evolving world with thousands of fellow adventurers.",
+
+
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+}
+
+
+  
 
 }
 
