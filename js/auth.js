@@ -25,55 +25,60 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
 // ✅ Signup function
+
 function signup() {
+
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const firstName = document.getElementById("First_Name").value;
-  const lastName = document.getElementById("Last_Name").value; 
+  const lastName = document.getElementById("Last_Name").value;
 
-  if( firstName.trim() === "" ||
-  lastName.trim() === "" ||
-  email.trim() === "" ||
-  password.trim() === "")
-{
+  if (
+    firstName.trim() === "" ||
+    lastName.trim() === "" ||
+    email.trim() === "" ||
+    password.trim() === ""
+  ) {
+
     alert("Fill all fields");
     return;
 
-
   }
 
-createUserWithEmailAndPassword(auth, email, password)
+  createUserWithEmailAndPassword(auth, email, password)
 
-.then((userCredential) => {
+    .then((userCredential) => {
 
-    const user = userCredential.user;
+      const user = userCredential.user;
 
-    // Only profile data save
-    set(ref(db, 'users/' + user.uid), {
+      return set(ref(db, 'users/' + user.uid), {
 
-    firstName: firstName.trim(),
-    lastName: lastName.trim(),
-    email: email.trim()
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        email: email.trim()
 
-})
+      });
 
-.then(() => {
+    })
 
-    alert("Account Created!");
+    .then(() => {
 
-    window.location.href = "index.html";
+      alert("Account Created!");
 
-});
+      window.location.href = "index.html";
 
-.catch((error) => {
+    })
 
-    console.log(error);
+    .catch((error) => {
 
-    alert(error.message);
+      console.log(error);
 
-});
+      alert(error.message);
+
+    });
 
 }
+
 
 // ✅ DOM load hone ke baad sab bind karo
 document.addEventListener("DOMContentLoaded", function() {
