@@ -1114,7 +1114,7 @@ animation:
 }
 
 .thumbs{
-    flex-wrap:wrap;
+    flex-wrap: nowrap;
 }
 	
 }
@@ -1310,7 +1310,16 @@ animation:
   display: flex;
   gap: 10px;
   margin-top: 10px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  white-space: nowrap;
+  scroll-behavior: smooth;
+
+  padding-bottom: 6px;
 }
+
 
 .thumbs img {
    width: 90px;
@@ -1320,7 +1329,18 @@ animation:
   border-radius: 6px;
   transition: 0.3s;
 	opacity: 0.7;
+	flex-shrink: 0;
 	
+}
+
+.thumbs::-webkit-scrollbar {
+  height: 6px;
+}
+
+
+.thumbs::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
 }
 
 .thumbs img:hover {
