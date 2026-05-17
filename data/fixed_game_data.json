@@ -214,27 +214,7 @@
     "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
   ], 
 
-      "about":"Welcome to Los Santos
-When a young street hustler, a retired bank robber, and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government, and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody — least of all each other.
-Current PC players can transfer both GTAV Story Mode progress and GTA Online characters and progression with a one-time migration from the legacy version of GTAV to GTAV Enhanced.
-
-Stunning Visuals
-Enhanced levels of fidelity and performance with new graphics modes including ray tracing features such as ambient occlusion and global illumination, ray traced shadows and reflections, support for AMD FSR1 and FSR3, and NVIDIA DLSS 3, and more.*
-
-Faster Loading
-Quicker access to the action as the world of Los Santos and Blaine County load in faster than ever before by using SSD and DirectStorage on supported devices.
-
-Immersive Controls
-Feel new levels of responsiveness with dynamic resistance via the Adaptive Triggers on the DualSense™ wireless controller, from directional damage to weather effects, rough road surfaces to explosions, and much more.*
-
-3D Audio
-Enhanced audio with support for Dolby Atmos and improved fidelity of speech, cinematics, and music.* Hear the sounds of the world with pinpoint precision: the throttle of a stolen supercar, the rattle of neighboring gunfire, the roar of a helicopter overhead, and more.
-
-Grand Theft Auto Online
-Experience GTA Online, a dynamic and ever-evolving online universe for up to 30 players, where you can rise from street-level hustler to become a kingpin of your own criminal empire.
-
-Enjoy new high-performance vehicle upgrades and improvements like the Career Builder as well as all GTA Online gameplay upgrades, expansions, and content released since launch, ready to enjoy solo or with friends. Pull off daring co-operative Heists, enter adrenaline-fueled Stunt Races, compete in unique Adversary Modes, or hang out in social spaces including nightclubs, arcades, penthouse parties, car meetups, and much more."
-    ,
+"about":"<b>Welcome to Los Santos</b><br><br>When a young street hustler, a retired bank robber, and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government, and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody — least of all each other.<br><br>Current PC players can transfer both GTAV Story Mode progress and GTA Online characters and progression with a one-time migration from the legacy version of GTAV to GTAV Enhanced.<br><br><b>Stunning Visuals</b><br><br>Enhanced levels of fidelity and performance with new graphics modes including ray tracing features such as ambient occlusion and global illumination, ray traced shadows and reflections, support for AMD FSR1 and FSR3, and NVIDIA DLSS 3, and more.*<br><br><b>Faster Loading</b><br><br>Quicker access to the action as the world of Los Santos and Blaine County load in faster than ever before by using SSD and DirectStorage on supported devices.<br><br><b>Immersive Controls</b><br><br>Feel new levels of responsiveness with dynamic resistance via the Adaptive Triggers on the DualSense™ wireless controller, from directional damage to weather effects, rough road surfaces to explosions, and much more.*<br><br><b>3D Audio</b><br><br>Enhanced audio with support for Dolby Atmos and improved fidelity of speech, cinematics, and music.* Hear the sounds of the world with pinpoint precision: the throttle of a stolen supercar, the rattle of neighboring gunfire, the roar of a helicopter overhead, and more.<br><br><b>Grand Theft Auto Online</b><br><br>Experience GTA Online, a dynamic and ever-evolving online universe for up to 30 players, where you can rise from street-level hustler to become a kingpin of your own criminal empire.<br><br>Enjoy new high-performance vehicle upgrades and improvements like the Career Builder as well as all GTA Online gameplay upgrades, expansions, and content released since launch, ready to enjoy solo or with friends. Pull off daring co-operative Heists, enter adrenaline-fueled Stunt Races, compete in unique Adversary Modes, or hang out in social spaces including nightclubs, arcades, penthouse parties, car meetups, and much more.",
 
 
     "genre": "Action/Open World/RPG",
@@ -244,7 +224,7 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
 },
 
     "cyberpunk": {
-    "title": "WHERE WINDS MEET",
+    "title": "Cyberpunk 2077",
     "desc": "Open world martial arts RPG",
     "image": "images/game_imgaes/where_winds_meet.jpg",
 
@@ -258,17 +238,14 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
     "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
   ], 
 
-      "about":""
-    
-
-    "genre": "Action/Open World/RPG",
+      "about":"Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?<br><br><b>CUSTOMIZE YOUR CYBERPUNK WITH UPDATE 2.2!</b><br><br>Express yourself with free Update 2.2! Customize your character with new variants of cosmetic cyberware, tattoos, and makeup. Take your ride to the next level with Rayfield's exclusive CrystalCoat technology, letting you swap colors on luxury and sports cars. Plus, dive into the enhanced photo mode to capture every moment in stunning detail.<br><br><b>CREATE YOUR OWN CYBERPUNK</b><br><br>Become an urban outlaw equipped with cybernetic enhancements and build your legend on the streets of Night City.<br><br><b>EXPLORE THE CITY OF THE FUTURE</b><br><br>Night City is packed to the brim with things to do, places to see, and people to meet. And it's up to you where to go, when to go, and how to get there.<br><br><b>BUILD YOUR LEGEND</b><br><br>Go on daring adventures and build relationships with unforgettable characters whose fates are shaped by the choices you make.","genre": "Action/Open World/RPG",
     "release":"14 Nov 2025",
     "developer":"Everstone Studio"
 
 },
 
       "rdr_2": {
-    "title": "WHERE WINDS MEET",
+    "title": "Red Dead Redemption 2",
     "desc": "Open world martial arts RPG",
     "image": "images/game_imgaes/where_winds_meet.jpg",
 
@@ -282,7 +259,7 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
     "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
   ], 
 
-   "about":""
+   "about":"Red Dead Redemption 2<br>America, 1899. Arthur Morgan and the Van der Linde Gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.<br>Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age.<br>Red Dead Redemption 2 also includes Red Dead Online — the multiplayer experience set in the living world of Red Dead Redemption 2 — ride solo or form a posse; run moonshine; battle lawmen, outlaw gangs, ferocious wild animals, and much more as you forge your own path on the American frontier."
 
     "genre": "Action/Open World/RPG",
     "release":"14 Nov 2025",
@@ -293,7 +270,7 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
 
 
         "forza_horizon_5": {
-    "title": "WHERE WINDS MEET",
+    "title": "Forza Horizon 5",
     "desc": "Open world martial arts RPG",
     "image": "images/game_imgaes/where_winds_meet.jpg",
 
@@ -307,7 +284,7 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
     "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
   ], 
 
-    "about":""
+    "about":"<b>Get Forza Motorsport</b><br>Out-build the competition in the Builders Cup Career Mode. Compete for the podium in adjudicated Featured Multiplayer events. Race in over 500 cars across 30 world-famous tracks with cutting edge AI, advanced physics, tire and fuel strategy, and driver and safety ratings. Experience the latest content and feature updates including the 20th Anniversary Tour, Open Track Day and Drift Meetups, Car Proximity Radar, Drift mode, Spectate, endurance and multi-class racing, as well as returning fan-favorite locations Bathurst, Fujimi Kaido, Nürburgring Nordschleife, Road Atlanta, and Sunset Peninsula. Purchase the Premium Edition or Premium Add-Ons Bundle to get Car Pass, Race Day Car Pack, VIP and Welcome Pack."
 
     "genre": "Action/Open World/RPG",
     "release":"14 Nov 2025",
@@ -331,8 +308,7 @@ Enjoy new high-performance vehicle upgrades and improvements like the Career Bui
     "images/game_imgaes/thumbs/where-winds-meet/where-winds-meet_7.webp"    
   ], 
 
-    "about":""
-
+    "about":"<b>Game Overview</b><br><br>Chloe and Nadine travel to the Western Ghats in search of an ancient treasure. From award-winning developer Naughty Dog comes a brand new UNCHARTED game, starring Chloe Frazer.<br><br>In order to recover an ancient artifact and keep it out of the hands of a ruthless warmonger, Chloe must enlist the aid of renowned mercenary Nadine Ross and venture to India’s Western Ghats to locate the Golden Tusk of Ganesh. In Chloe’s greatest journey yet, she must confront her past and decide what she’s willing to sacrifice to forge her own legacy.<br><br><b>Chloe Frazer</b><br><br>First appearance - UNCHARTED 2: Among Thieves<br><br>Last appearance - UNCHARTED 3: Drake’s Deception<br><br>One of the most popular characters in the series, Chloe is a notorious treasure hunter whose wit, archaeological knowledge and improvisational nature rival Nathan Drake’s. She has a reputation for being both great in a fight and behind the wheel.<br><br>Chloe is impulsive and improvisational, relying largely on her wits – and her methods often blur moral lines but always yield results, putting her in high demand. However, she has her limits, and when a situation starts to go south, she’s unafraid to cut her losses.<br><br><b>Nadine Ross</b><br><br>First/last appearance - UNCHARTED 4: A Thief’s End<br><br>Nadine previously acted as the fearsome leader of Shoreline, a South African paramilitary organization hired by UNCHARTED 4’s primary antagonist Rafe Adler. Following the dissolution of Shoreline, Nadine has become a free agent and gun-for-hire. Known for her calm, calculated approach to every job and every fight, she insists on having the upper hand at all times and never fails to deliver.",
     "genre": "Action/Open World/RPG",
     "release":"14 Nov 2025",
     "developer":"Everstone Studio"
