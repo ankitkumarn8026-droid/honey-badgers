@@ -1150,10 +1150,12 @@ animation:
 /* =========================
    CYBERPUNK LOADER
 ========================= */
-
+#mainContent{
+    opacity: 0;
+}
 .cyber-loader{
     position: fixed;
-    top: 96px;      /* header ke niche */
+    top: 90px;      /* header ke niche */
     left: 0;
     right: 0;
     height: calc(100vh - 96px);
@@ -1161,13 +1163,14 @@ animation:
     background: rgba(0,0,0,0.92);
     backdrop-filter: blur(8px);
 
-    z-index: 999;
+    z-index: 9999;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     overflow: hidden;
+	transition: 0.8s ease;
 }
 
 /* CENTER BOX */
