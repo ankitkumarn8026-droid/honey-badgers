@@ -238,8 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new PhotoCoverflow();
 }
    // Hide loading screen
-  const loader = document.getElementById('loadingScreen');
-
+  const loader = document.getElementById('cyberLoader');
 if (loader) {
   loader.style.display = "flex";
 }
