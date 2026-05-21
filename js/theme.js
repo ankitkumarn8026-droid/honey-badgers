@@ -401,9 +401,11 @@ if (slides.length > 0) {
   const heroContent = document.querySelector(".hero-content");
 
   // Hide content initially
-  if (heroContent) {
-    heroContent.style.opacity = "0";
-  }
+const mainContent = document.getElementById("mainContent");
+
+if(mainContent){
+   mainContent.style.opacity = "0";
+}
 
   showSlide(index);
 
@@ -447,12 +449,12 @@ function checkAllLoaded(){
 
       }
 
-      if(heroContent){
+if(mainContent){
 
-         heroContent.style.transition = "opacity 0.8s ease";
-         heroContent.style.opacity = "1";
+   mainContent.style.transition = "opacity 0.8s ease";
+   mainContent.style.opacity = "1";
 
-      }
+}
 
       const title = document.querySelector(".typing-title");
       const subtitle = document.querySelector(".typing-subtitle");
