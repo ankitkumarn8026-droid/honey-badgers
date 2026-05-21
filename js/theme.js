@@ -329,8 +329,7 @@ if (menuToggle && navMenu) {
    
    window.addEventListener('scroll', revealOnScroll);
    revealOnScroll(); // Check on load
-const title = document.querySelector(".typing-title");
-const subtitle = document.querySelector(".typing-subtitle");
+
 
    // tumhara existing code ...
 
@@ -423,34 +422,85 @@ if (slides.length > 0) {
 
   img.src = bgImage;
 
- img.onload = () => {
-     
-    if (loader) {
-    loader.classList.add("hidden");
-  }
+const coverImages = document.querySelectorAll(".portfolio-image");
 
-  if (heroContent) {
-    heroContent.style.transition = "opacity 0.8s ease";
-    heroContent.style.opacity = "1";
-  }
+let loadedCount = 0;
 
-  const title = document.querySelector(".typing-title");
-  const subtitle = document.querySelector(".typing-subtitle");
+const totalImages = coverImages.length + 1;
 
-  if (title) {
-    title.style.animation = "none";
-    title.offsetHeight;
-    title.style.animation = "";
-  }
 
-  if (subtitle) {
-    subtitle.style.animation = "none";
-    subtitle.offsetHeight;
-    subtitle.style.animation = "";
-  }
+function checkAllLoaded(){
 
-};
+   loadedCount++;
 
+   if(loadedCount >= totalImages){
+
+      if(loader){
+
+         loader.style.opacity = "0";
+         loader.style.transition = "0.8s ease";
+
+         setTimeout(()=>{
+
+            loader.style.display = "none";
+
+         },800);
+
+      }
+
+      if(heroContent){
+
+         heroContent.style.transition = "opacity 0.8s ease";
+         heroContent.style.opacity = "1";
+
+      }
+
+      const title = document.querySelector(".typing-title");
+      const subtitle = document.querySelector(".typing-subtitle");
+
+      if(title){
+
+         title.style.animation = "none";
+         title.offsetHeight;
+         title.style.animation = "";
+
+      }
+
+      if(subtitle){
+
+         subtitle.style.animation = "none";
+         subtitle.offsetHeight;
+         subtitle.style.animation = "";
+
+      }
+
+   }
+
+}
+
+
+/* HERO IMAGE */
+
+img.onload = checkAllLoaded;
+img.onerror = checkAllLoaded;
+
+if(totalImages === 1){
+   checkAllLoaded();
+}
+
+/* COVERFLOW IMAGES */
+
+coverImages.forEach(image=>{
+
+   const tempImg = new Image();
+
+   tempImg.src = image.src;
+
+   tempImg.onload = checkAllLoaded;
+   tempImg.onerror = checkAllLoaded;
+
+});
+   
    autoSlide = setInterval(nextSlide, 4000);
 
 }
