@@ -1154,9 +1154,18 @@ animation:
     opacity: 0;
 }
 .cyber-loader{
- 
-    position: absolute;
+
+    position: fixed;
+
+    top: 90px;
+
+    left: 0;
+    right: 0;
+
+    bottom: 260px;
+
     background: rgba(0,0,0,0.92);
+
     backdrop-filter: blur(8px);
 
     z-index: 9999;
@@ -1166,7 +1175,8 @@ animation:
     align-items: center;
 
     overflow: hidden;
-	transition: 0.8s ease;
+
+    transition: 0.8s ease;
 }
 
 /* CENTER BOX */
