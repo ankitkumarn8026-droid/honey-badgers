@@ -359,8 +359,400 @@
 }
 
 
+"resident_evil_2": {
+    "title": "Resident Evil 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+  "gta_san": {
+    "title": "Grand Theft Auto: San Andreas",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+  "gta_vice_city": {
+    "title": "Grand Theft Auto: Vice City",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+    "minecraft": {
+    "title": "Minecraft",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+      "fortnite": {
+    "title": "Fortnite",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+        "call_of_duty": {
+    "title": "Call of Duty",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+          "watch_dogs_2": {
+    "title": "Watch Dogs 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+    "mafia_II": {
+    "title": "Mafia II",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  }
+
+
+      "bully_scholarship": {
+    "title": "Bully Scholarship Edition",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+        "counter_strike": {
+    "title": "Counter-Strike 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+    "euro_truck_simulator_2":{
+    "title": "Euro Truck Simulator 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+      "helldivers_2":{
+    "title": "Helldivers 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+        "spider_man-2":{
+    "title": "Marvel's Spider-Man 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+          "the_witcher_3":{
+    "title": "The Witcher 3: Wild Hunt",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+            "black_myth":{
+    "title": "Black Myth: Wukong",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+   "super_mario":{
+    "title": "Super Mario",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+     "need_for_speed":{
+    "title": "Need for Speed: Most Wanted",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+       "alan_wake_2":{
+    "title": "Alan Wake 2",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+
+         "ghost_of_tsushima":{
+    "title": "Ghost of Tsushima",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+           "battlefield_2042":{
+    "title": "Battlefield 2042",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+  },
+
+             "apex_legends":{
+    "title": "Apex Legends",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
   
+             "the_last_of_us":{
+    "title": "The Last of Us",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+
+               "assassin's_creed":{
+    "title": "Assassin's Creed",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+
+    "far_cry_6":{
+    "title": "Far Cry 6",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+
+      "microsoft_flight_simulator":{
+    "title": "Microsoft Flight Simulator",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
+
+},
+
+      "gta_IV":{
+    "title": "Grand Theft Auto IV",
+    "desc": "Open world martial arts RPG",
+    "image": "images/game_imgaes/where_winds_meet.jpg",
+
+      "thumbs": [
+    "images/game_imgaes/thumbs/uncharted_lost_legacy/uncharted_lost_legacy_1.webp" ],
+
+    "about":"",
+    "genre": "Action/Open World/RPG",
+    "release":"14 Nov 2025",
+    "developer":"Everstone Studio"
 
 }
-
-
+  
+}
