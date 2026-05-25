@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ankitkumarn8026-droid.github.io/honey-badgers/sitemap.xml
