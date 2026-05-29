@@ -730,6 +730,16 @@ if (searchInput && suggestionsBox) {
 
 }
 
+document.addEventListener("click", (e) => {
+
+    if (
+        suggestionsBox &&
+        !e.target.closest(".search-box")
+    ) {
+        suggestionsBox.style.display = "none";
+    }
+
+});
 
 
 
