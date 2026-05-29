@@ -615,6 +615,40 @@ libraryCards.forEach(card => {
 
 });
 
+function searchGame() {
+
+    const query = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    if (!query) return;
+
+    for (const gameId in games) {
+
+        const gameTitle = games[gameId].title.toLowerCase();
+
+        if (gameTitle.includes(query)) {
+
+            openGame(gameId);
+            return;
+
+        }
+    }
+
+    alert("Game not found!");
+}
+
+
+document.getElementById("searchInput")
+.addEventListener("keydown", function(e) {
+
+    if (e.key === "Enter") {
+        searchGame();
+    }
+
+});
 
 function openGame(gameId) {
    localStorage.setItem("activeGame", gameId);
