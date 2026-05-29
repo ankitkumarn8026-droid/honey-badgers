@@ -608,6 +608,7 @@ libraryCards.forEach(card => {
   card.addEventListener("click", () => {
 
     const gameId = card.dataset.game;
+     
 
     openGame(gameId);
 
@@ -616,6 +617,11 @@ libraryCards.forEach(card => {
 });
 
 function searchGame() {
+
+   if (Object.keys(games).length === 0) {
+    alert("Games are still loading...");
+    return;
+}
 
     const query = document
         .getElementById("searchInput")
@@ -640,15 +646,92 @@ function searchGame() {
     alert("Game not found!");
 }
 
+const searchInput = document.getElementById("searchInput");
+const suggestionsBox = document.getElementById("searchSuggestions");
 
-document.getElementById("searchInput")
-.addEventListener("keydown", function(e) {
+if (searchInput && suggestionsBox) {
 
-    if (e.key === "Enter") {
-        searchGame();
-    }
+    searchInput.addEventListener("input", () => {
 
-});
+        const query = searchInput.value.toLowerCase().trim();
+
+        suggestionsBox.innerHTML = "";
+
+        if (!query) {
+            suggestionsBox.style.display = "none";
+            return;
+        }
+
+        let matches = [];
+
+        for (const gameId in games) {
+
+            if (
+                games[gameId].title
+                .toLowerCase()
+                .includes(query)
+            ) {
+                matches.push({
+                    id: gameId,
+                    title: games[gameId].title
+                });
+            }
+        }
+
+        if (matches.length === 0) {
+            suggestionsBox.style.display = "none";
+            return;
+        }
+
+        matches.slice(0,5).forEach(game => {
+
+            const item = document.createElement("div");
+
+            item.className = "suggestion-item";
+            item.textContent = game.title;
+
+            item.addEventListener("click", () => {
+
+                searchInput.value = game.title;
+
+                suggestionsBox.innerHTML = "";
+                suggestionsBox.style.display = "none";
+
+                openGame(game.id);
+
+            });
+
+            suggestionsBox.appendChild(item);
+
+        });
+
+        suggestionsBox.style.display = "block";
+    });
+
+    searchInput.addEventListener("keydown", function(e) {
+
+        const firstSuggestion =
+            document.querySelector(".suggestion-item");
+
+        if (e.key === "Tab" && firstSuggestion) {
+
+            e.preventDefault();
+
+            searchInput.value =
+                firstSuggestion.textContent;
+
+            suggestionsBox.style.display = "none";
+        }
+
+        if (e.key === "Enter") {
+            searchGame();
+        }
+    });
+
+}
+
+
+
 
 function openGame(gameId) {
    localStorage.setItem("activeGame", gameId);
