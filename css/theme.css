@@ -363,11 +363,11 @@ nav {
         height: clamp(280px,40vh,350px);
     }
 
-    .coverflow-item{
-        width: clamp(170px,22vh,220px);
-        height: clamp(230px,30vh,300px);
-    }
-
+     .coverflow-item{
+             width: 130px;
+              height: 190px;
+             }
+   
     /* About */
     .about-container{
         grid-template-columns: 1fr;
@@ -475,7 +475,8 @@ nav {
 
 /* Hero Section */
 .hero-section {
-  height: 100vh;
+  min-height: 70vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,6 +490,14 @@ nav {
   overflow: hidden;
   inset: 0;
   z-index: 0;
+}
+
+.hero-slider,
+.slide{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
 }
 
 .slide {
@@ -1194,14 +1203,10 @@ animation:
 		height: clamp(250px, 38vh, 320px);
 	}
 
-	.coverflow-item {
-		width: clamp(150px, 20vh, 200px);
-		height: clamp(200px, 28vh, 280px);
-	}
-
-	.portfolio-overlay {
-		padding: 20px;
-	}
+          .coverflow-item{
+                 width: 120px;
+		          padding: 20px;
+	                }
 
 	.portfolio-title {
 		font-size: 18px;
