@@ -1537,6 +1537,34 @@ animation:
       display:none;
    }
 
+.nav-right{
+      display:none;
+   }
+
+   .nav-right.active{
+      display:flex;
+   }
+
+	nav{
+      flex-wrap:wrap;
+   }
+
+   .coverflow-container{
+      width:100%;
+      max-width:100%;
+   }
+
+   .portfolio-section{
+      min-height:auto;
+      padding:60px 0;
+   }
+
+   .slide{
+      background-size:cover;
+      background-position:center center;
+   }
+
+	
 }
 
 /* Smooth Reveal Animations */
