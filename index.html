@@ -71,7 +71,7 @@
            <div class="search-box">
 
            <input type="text" id="searchInput" placeholder="Search games...">
-           <button onclick="searchGame()">🔍</button>
+           <button onclick="searchGame()" aria-label="Search Games">🔍</button>
    
           <div id="searchSuggestions" class="search-suggestions"></div>
 
@@ -205,9 +205,9 @@
 
             <!-- Navigation Controls -->
             <div class="coverflow-controls">
-                <button class="control-btn" id="prevBtn">‹</button>
-                <button class="control-btn" id="playPauseBtn">▶</button>
-                <button class="control-btn" id="nextBtn">›</button>
+<button class="control-btn" id="prevBtn" aria-label="Previous Game">‹</button>
+<button class="control-btn" id="playPauseBtn" aria-label="Play Slideshow">▶</button>
+<button class="control-btn" id="nextBtn" aria-label="Next Game">›</button>
             </div>
 
             <!-- Indicators -->
@@ -239,7 +239,7 @@
 
     <!-- LEFT SIDE -->
     <div class="game-media">
-      <img id="gameImage" class="main-image">
+      <img id="gameImage" class="main-image" alt="Game Image">
 
 <div class="thumbs"></div>
  </div>
@@ -347,11 +347,25 @@
     <div class="footer-col">
       <h4>Follow Us</h4>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="#" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+</a>
+
+<a href="#" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+</a>
+
+<a href="#" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+</a>
       </div>
     </div>
 
